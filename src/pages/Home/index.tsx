@@ -4,7 +4,7 @@ import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from '@components/Loader'
 import Header from '@layout/Header'
-import { CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4, HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeTitle, Section2ContentsImg } from '@layout/index.style'
+import { Accordion1, AccordionItem, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4, HomeSection4AccordionTxt, HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
 import HomeTopImg from '../../img/home.png'
 import HomeText from '../../img/hometext.png'
 import Mntx from '../../img/mntx.png'
@@ -17,6 +17,10 @@ import Section3Contents2 from '../../img/homesection3contents2.png'
 import Section3Contents3 from '../../img/homesection3contents3.png'
 import Section3Contents4 from '../../img/homesection3contents4.png'
 import Section4BtnImg from '../../img/section4btnimg.svg'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Accordion from 'react-bootstrap/Accordion'
+
+
 interface IHomeProps {
 
 }
@@ -26,7 +30,9 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   useOnMount(() => {})
   useOnUnmount(() => {})
   return (
+    
     <Fragment>
+     
       <HomeSection1>
         <HomeLogo>
           <img src={ HomeTopImg } alt="" />
@@ -38,7 +44,10 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <img src={ Mntx } alt="" />
         </HomeLogo2>
         <CustomBtnPosition>
-          <CustomBtn>예약하기</CustomBtn>
+          <LinkLineNone to='/Reservation'>
+            <CustomBtn>예약하기</CustomBtn>
+          </LinkLineNone>
+          
         </CustomBtnPosition>  
       </HomeSection1>
 
@@ -51,16 +60,24 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <HomeContents>집 앞에서부터 원하는 목적지까지 안전하고 편안한 이동을 선사합니다.</HomeContents>
           <HomeContentsBottomMargin></HomeContentsBottomMargin>
           <Section2ContentsImg>
-            <img src={ Section2Contents1 } alt="" />
+            <LinkLineNone to='/Guide'>
+              <img src={ Section2Contents1 } alt="" />
+            </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <img src={ Section2Contents2 } alt="" /> 
+            <LinkLineNone to='/Guide'>
+              <img src={ Section2Contents2 } alt="" />
+            </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <img src={ Section2Contents3 } alt="" />  
+            <LinkLineNone to='/Guide'>
+              <img src={ Section2Contents3 } alt="" />
+            </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <img src={ Section2Contents4 } alt="" />  
+            <LinkLineNone to='/Guide'>
+              <img src={ Section2Contents4 } alt="" />
+            </LinkLineNone>
           </Section2ContentsImg>
         </HomeSection2>
       </HomeSection2All>
@@ -129,32 +146,21 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
         <HomeSection4>
           <HomeSection4Title>FAQ</HomeSection4Title>
           <HomeSection4SubTitle>자주 묻는 질문 내용을 확인하세요.</HomeSection4SubTitle>
-          <HomeSection4Btn>
-            <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-            <HomeSection4Txt>배차가 빠르게 이루어지나요?</HomeSection4Txt>
-            <HomeSection4BtnRight>
-              <HomeSection4BtnImg src={ Section4BtnImg }></HomeSection4BtnImg>
-            </HomeSection4BtnRight>
-            
-          </HomeSection4Btn>
-          <HomeSection4Btn>
-            <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-            <HomeSection4Txt>예약 확인 문자가 안와요.</HomeSection4Txt>
-            <HomeSection4BtnImg src={ Section4BtnImg }></HomeSection4BtnImg>
-          </HomeSection4Btn>
-          <HomeSection4Btn>
-            <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-            <HomeSection4Txt>예약[확인/변경/취소]는 어떻게 하나요?</HomeSection4Txt>
-            <HomeSection4BtnImg src={ Section4BtnImg }></HomeSection4BtnImg>
-          </HomeSection4Btn>
-          <HomeSection4Btn>
-            <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-            <HomeSection4Txt>차량 운행시간이 어떻게 되나요?</HomeSection4Txt>
-            <HomeSection4BtnImg src={ Section4BtnImg }></HomeSection4BtnImg>
-          </HomeSection4Btn>
-   
+          {/* <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
+          <HomeSection4Txt>차량 운행시간이 어떻게 되나요?</HomeSection4Txt> */}
+          <Accordion1>
+            <AccordionItem eventKey='0'>
+              <Accordion.Header>
+                <HomeSection4AccordionTxt>
+                  12
+                </HomeSection4AccordionTxt>
+              </Accordion.Header>
+              <Accordion.Body>2</Accordion.Body>
+            </AccordionItem>
+          </Accordion1>
         </HomeSection4>
       </HomeSection4All>
+      
     </Fragment>
   )
 }

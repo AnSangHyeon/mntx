@@ -1,23 +1,33 @@
+import { Accordion } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 
 export const CustomWrapper = styled.header`
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: fixed;
   
 `
 export const HeaderLeft = styled.div`
-  float:left
+  float:left;
+  height: 100%;
 `
 export const HeaderRight = styled.div`
-  float:right
+  float:right;
 `
 export const HeaderIogo = styled.div`
   padding:14px 10px;
   width:128px;
-  height:79px;
+  height: 79px;
   display:inline-block
+
 `
 export const MainMenu = styled.div`
-  font-size:1.3em;
+  position: relative;
+  top: 0;
+  font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
   color: #000;
@@ -28,8 +38,7 @@ export const MainMenu = styled.div`
   justify-content: center;
 `
 export const HeaderLogin = styled.div`
-  position:fixed
-  font-size:1.3em;
+  font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
   color: #000;
@@ -41,8 +50,7 @@ export const HeaderLogin = styled.div`
   
 `
 export const HeaderSign = styled.div`
-  position:fixed
-  font-size:1.3em;
+  font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
   color: #000;
@@ -54,7 +62,7 @@ export const HeaderSign = styled.div`
 `
 export const HomeSection1 = styled.div`
   background: #feefd4;  
-  padding: 95px 0px 150px 0px;
+  padding: 175px 0px 150px 0px;
 `
 export const HomeLogo = styled.div`
   
@@ -232,5 +240,25 @@ export const HomeSection4BtnImg = styled.img`
   height: 20px;  
 `
 export const HomeSection4BtnRight = styled.div`
+  
+`
+export const LinkLineNone = styled(Link)`
+  text-decoration: none;
+`
+export const AccordionItem = styled(Accordion.Item)`
+  width: 900px;
+  
+`
+export const Accordion1 = styled(Accordion)`
+  width: 900px;
+  height: 375.19px;
+  margin: 0 auto;
+  
+`
+export const HomeSection4AccordionTxt = styled.div`
+  height: 28.8px;
+  font-size: 1.5rem;
+`
+export const AccordionHead = styled(Accordion.Header)`
   
 `
