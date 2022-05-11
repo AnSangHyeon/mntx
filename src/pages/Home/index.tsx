@@ -152,7 +152,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
               <AccordionItem eventKey='0'>
                 <AccordionHead>
                   <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-                  <HomeSection4Txt>차량 운행시간이 어떻게 되나요?</HomeSection4Txt>
+                  <HomeSection4Txt>23</HomeSection4Txt>
                 </AccordionHead>
                 <Accordion.Body>2</Accordion.Body>
               </AccordionItem>
