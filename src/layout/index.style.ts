@@ -229,6 +229,7 @@ export const HomeSection4BtnHighlight = styled.div`
   padding: 0 20px 0 0;
   font-weight: 600;
   font-size: 1.5rem;
+  display: inline-block;
 `
 export const HomeSection4Txt = styled.span`
   color: #212529;
@@ -247,18 +248,12 @@ export const LinkLineNone = styled(Link)`
 `
 export const AccordionItem = styled(Accordion.Item)`
   width: 900px;
-  
-`
-export const Accordion1 = styled(Accordion)`
-  width: 900px;
-  height: 375.19px;
   margin: 0 auto;
-  
-`
-export const HomeSection4AccordionTxt = styled.div`
-  height: 28.8px;
-  font-size: 1.5rem;
 `
 export const AccordionHead = styled(Accordion.Header)`
+  width: 900px;
   
+`
+export const AccordionAll = styled.div`
+  height: 375.19px;
 `
