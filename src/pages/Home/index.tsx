@@ -4,7 +4,7 @@ import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from '@components/Loader'
 import Header from '@layout/Header'
-import { AccordionAll, AccordionHead, AccordionItem, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
+import { AccordionA, AccordionA1, AccordionA2, AccordionAll, AccordionBody, AccordionBody1, AccordionBody2, AccordionHead, AccordionItem, AccordionTxt, AccordionTxtLeft, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4Notice1, HomeSection4Notice2, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeSection4Txt1, HomeSection4TxtRed, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
 import HomeTopImg from '../../img/home.png'
 import HomeText from '../../img/hometext.png'
 import Mntx from '../../img/mntx.png'
@@ -151,12 +151,83 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
             <Accordion defaultActiveKey="0">
               <AccordionItem eventKey='0'>
                 <AccordionHead>
-                  <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
-                  <HomeSection4Txt>23</HomeSection4Txt>
+                  <AccordionTxt>
+                    <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
+                    <HomeSection4Txt>배차가 빠르게 이루어지나요?</HomeSection4Txt>
+                  </AccordionTxt>
                 </AccordionHead>
-                <Accordion.Body>2</Accordion.Body>
+                <AccordionBody>
+                  <AccordionTxt>
+                    <AccordionTxtLeft>
+                      <AccordionA>A</AccordionA>
+                      <HomeSection4Txt>배차가 빠르게 이루어지고 출발 1시간 전까지 예약이 가능합니다.</HomeSection4Txt>
+                    </AccordionTxtLeft>
+                    </AccordionTxt>
+                </AccordionBody>
+              </AccordionItem>
+              <AccordionItem eventKey='1'>
+                <AccordionHead>
+                  <AccordionTxt>
+                    <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
+                    <HomeSection4Txt>예약 확인 문자가 안와요.</HomeSection4Txt>
+                  </AccordionTxt>
+                </AccordionHead>
+                <AccordionBody1>
+                  <AccordionTxt>
+                    <AccordionA1>A</AccordionA1>
+                    <HomeSection4Txt1>
+                      고객센터 운영시간 외 예약을 완료하셨다면,
+                      예약확인 문자는 다음 고객센터 운영시간에 전송됩니다.
+                    </HomeSection4Txt1> 
+                    <HomeSection4Notice1>
+                      * 고객센터 운영시간 (평일 오전 10시 ~ 오후 6시)
+                    </HomeSection4Notice1>
+                  </AccordionTxt>
+                </AccordionBody1>
+              </AccordionItem>
+              <AccordionItem eventKey='2'>
+                <AccordionHead>
+                  <AccordionTxt>
+                    <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
+                    <HomeSection4Txt>예약[확인 / 변경 / 취소]는 어떻게 하나요?</HomeSection4Txt>
+                  </AccordionTxt>
+                </AccordionHead>
+                <AccordionBody1>
+                  <AccordionTxt>
+                    <AccordionA1>A</AccordionA1>
+                    <HomeSection4Txt1>
+                    예약[확인 / 변경 / 취소]는 우측 하단에 위치한 
+                    '실시간 문의하기' 버튼을 통해 최대한 빠르게 도와드리고 있습니다.
+                    </HomeSection4Txt1> 
+                    <HomeSection4Notice2>
+                      예약[변경 / 취소]는 출발 1시간 전까지 
+                      가능한 점 양해 부탁드리겠습니다.
+                    </HomeSection4Notice2>
+                  </AccordionTxt>
+                </AccordionBody1>
+              </AccordionItem>
+              <AccordionItem eventKey='3'>
+                <AccordionHead>
+                  <AccordionTxt>
+                    <HomeSection4BtnHighlight>Q</HomeSection4BtnHighlight>
+                    <HomeSection4Txt>차량 운전시간이 어떻게 되나요?</HomeSection4Txt>
+                  </AccordionTxt>
+                </AccordionHead>
+                <AccordionBody2>
+                  <AccordionTxt>
+                    <AccordionA2>A</AccordionA2>
+                    <HomeSection4Txt1>운행시간은 [오전 7시 ~ 오후 11시] 까지입니다.</HomeSection4Txt1> 
+                    <HomeSection4Notice2>[오후 7시 ~ 오후 11시], [오전 7시 ~ 오후 12시]사이</HomeSection4Notice2>
+                    <HomeSection4Txt>이용을 희망하시는 고객분들께서는 오후 6시 전에 예약을 완료해주셔야합니다.</HomeSection4Txt>
+                    <HomeSection4Notice1>* 할증요금 시간</HomeSection4Notice1>
+                    <HomeSection4TxtRed>
+                      [오전 7시~오전 9시], [오후 9시 ~ 오후 11시]
+                    </HomeSection4TxtRed>
+                  </AccordionTxt>
+                </AccordionBody2>
               </AccordionItem>
             </Accordion>
+            
           </AccordionAll>
           
           

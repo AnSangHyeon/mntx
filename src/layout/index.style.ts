@@ -8,7 +8,7 @@ export const CustomWrapper = styled.header`
   height: 80px;
   background: #fff;
   position: fixed;
-  
+  z-index:100;
 `
 export const HeaderLeft = styled.div`
   float:left;
@@ -192,7 +192,7 @@ export const HomeSection3Img4 = styled.img`
   height: 186.7px;
 `
 export const HomeSection4All = styled.div`
-  height: 820.58px;
+  height: 1098.58px;
   background: #eef1f7;
 `
 export const HomeSection4 = styled.div`
@@ -234,7 +234,7 @@ export const HomeSection4BtnHighlight = styled.div`
 export const HomeSection4Txt = styled.span`
   color: #212529;
   font-size: 1.5rem;
-  text-align: center;
+  
 `
 export const HomeSection4BtnImg = styled.img`
   width: 20px;
@@ -256,4 +256,75 @@ export const AccordionHead = styled(Accordion.Header)`
 `
 export const AccordionAll = styled.div`
   height: 375.19px;
+`
+export const AccordionTxt = styled.div`
+  width: 844.61px;
+  padding: 9px 5px;
+  
+`
+export const AccordionA = styled.div`
+  font-weight: 600;
+  padding: 0 20px 0 0;
+  font-size: 1.5rem;
+  display: inline-block;
+`
+export const AccordionBody = styled(Accordion.Body)`
+  width: 900px;
+  height: 86px;
+`
+export const AccordionTxt1 = styled.div`
+  width: 900px;
+  padding: 9px 5px;
+`
+export const AccordionTxtLeft = styled.div`
+  float: left;
+`
+export const AccordionBody1 = styled(Accordion.Body)`
+  width: 900px;
+  height: 182px;
+ 
+`
+export const AccordionA1 = styled.div`
+  font-weight: 600;
+  padding: 0 20px 0 0;
+  font-size: 1.5rem;
+  height: 132px;
+  float: left;
+`
+export const HomeSection4Txt1 = styled.div`
+  color: #212529;
+  font-size: 1.5rem;
+  text-align: left;
+`
+export const HomeSection4Notice1 = styled.div`
+  color: #f41750;
+  padding: 24px 0 0 0;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+`
+export const HomeSection4Notice2 = styled.div`
+  color: #1b1d40;
+  padding: 24px 0 0 0;
+  display: block;
+  text-align: left;
+  font-size: 1.5rem;
+`
+export const AccordionBody2 = styled(Accordion.Body)`
+  width: 900px;
+  height: 278px;
+ 
+`
+export const AccordionA2 = styled.div`
+  font-weight: 600;
+  padding: 0 20px 0 0;
+  font-size: 1.5rem;
+  height: 228px;
+  float: left;
+`
+export const HomeSection4TxtRed = styled.span`
+  color: #f41750;
+  font-size: 1.5rem;
+  display: block;
+  text-align: left;
 `
