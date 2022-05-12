@@ -4,7 +4,7 @@ import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from '@components/Loader'
 import Header from '@layout/Header'
-import { AccordionA, AccordionA1, AccordionA2, AccordionAll, AccordionBody, AccordionBody1, AccordionBody2, AccordionHead, AccordionItem, AccordionTxt, AccordionTxtLeft, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4Notice1, HomeSection4Notice2, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeSection4Txt1, HomeSection4TxtRed, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
+import { AccordionA, AccordionA1, AccordionA2, AccordionAll, AccordionBody, AccordionBody1, AccordionBody2, AccordionHead, AccordionItem, AccordionTxt, AccordionTxtLeft, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4Notice1, HomeSection4Notice2, HomeSection4Padding, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeSection4Txt1, HomeSection4TxtRed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
 import HomeTopImg from '../../img/home.png'
 import HomeText from '../../img/hometext.png'
 import Mntx from '../../img/mntx.png'
@@ -17,8 +17,11 @@ import Section3Contents2 from '../../img/homesection3contents2.png'
 import Section3Contents3 from '../../img/homesection3contents3.png'
 import Section3Contents4 from '../../img/homesection3contents4.png'
 import Section4BtnImg from '../../img/section4btnimg.svg'
+import Section3Contents5Img from '../../img/HomeSection5Img.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Accordion from 'react-bootstrap/Accordion'
+import { Col, Container, Row } from 'react-bootstrap'
+import { ChildProcess } from 'child_process'
 
 
 interface IHomeProps {
@@ -165,6 +168,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
                     </AccordionTxt>
                 </AccordionBody>
               </AccordionItem>
+              <HomeSection4Padding></HomeSection4Padding>
               <AccordionItem eventKey='1'>
                 <AccordionHead>
                   <AccordionTxt>
@@ -185,6 +189,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
                   </AccordionTxt>
                 </AccordionBody1>
               </AccordionItem>
+              <HomeSection4Padding></HomeSection4Padding>
               <AccordionItem eventKey='2'>
                 <AccordionHead>
                   <AccordionTxt>
@@ -206,6 +211,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
                   </AccordionTxt>
                 </AccordionBody1>
               </AccordionItem>
+              <HomeSection4Padding></HomeSection4Padding>
               <AccordionItem eventKey='3'>
                 <AccordionHead>
                   <AccordionTxt>
@@ -227,13 +233,29 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
                 </AccordionBody2>
               </AccordionItem>
             </Accordion>
-            
           </AccordionAll>
-          
-          
         </HomeSection4>
       </HomeSection4All>
-      
+      <HomeSection5All>
+        <HomeSection5Row>
+          <HomeSection5Col xs={12} md={6}>
+            <HomeSection5Title>멍타냥택시는</HomeSection5Title>
+            <HomeSection5Title>반려동물 이동의 기준을 세웁니다.</HomeSection5Title>
+            <HomeSection525px></HomeSection525px>
+            <HomeSection5SubTitle>꼭 필요한 반려동물의 이동,</HomeSection5SubTitle>
+            <HomeSection5SubTitle>쾌적하고 안전한 환경에서 이동할 수 있도록</HomeSection5SubTitle>
+            <HomeSection5SubTitle>멍타냥 택시가 더 나은 반려동물과의 생활을 만들어갑니다.</HomeSection5SubTitle>
+            <HomeSection525px></HomeSection525px>
+            <HomeSection55px></HomeSection55px>
+            <HomeSection5CustomBtn>지금 예약하기</HomeSection5CustomBtn>
+          
+          </HomeSection5Col>
+          <HomeSection5Col xs={12} md={6}>
+            <img src={ Section3Contents5Img } alt="" />
+          </HomeSection5Col>
+        </HomeSection5Row>
+        
+      </HomeSection5All>
     </Fragment>
   )
 }

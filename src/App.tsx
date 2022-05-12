@@ -21,6 +21,7 @@ import Fare from '@pages/Fare'
 import SignUp from '@pages/Sign'
 
 
+
 interface IAppProps {
   children: ReactNode
 }
@@ -44,7 +45,6 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
         <Route path='/Fare' element={<Fare />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Sign' element={<SignUp />} />
-
       </Routes>
 
     </div>

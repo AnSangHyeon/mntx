@@ -1,4 +1,4 @@
-import { Accordion } from "react-bootstrap"
+import { Accordion, Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
@@ -192,7 +192,7 @@ export const HomeSection3Img4 = styled.img`
   height: 186.7px;
 `
 export const HomeSection4All = styled.div`
-  height: 1098.58px;
+  height: 820.58px;
   background: #eef1f7;
 `
 export const HomeSection4 = styled.div`
@@ -327,4 +327,51 @@ export const HomeSection4TxtRed = styled.span`
   font-size: 1.5rem;
   display: block;
   text-align: left;
+`
+export const HomeSection4Padding = styled.div`
+  padding: 0 0 20px 0;
+`
+export const HomeSection5All = styled.div`
+  height: 547.97px;
+  background: #eaeae8;
+  padding: 80px 0 0 0;
+`
+export const HomeSection5Col = styled(Col)`
+  width: 50%;
+  height: 467.97px;
+  
+`
+export const HomeSection5Row = styled(Row)`
+  width: 1536px;
+  margin: 0 auto;
+`
+export const HomeSection5Title = styled.div`
+  color: #1b1d40;
+  font-size: 2rem;
+  text-align: left;
+  font: weight: 600;
+`
+export const HomeSection525px = styled.div`
+  padding: 0 0 25px 0;
+`
+export const HomeSection5SubTitle = styled.div`
+  color: #1b1d40;
+  font-size: 1.5rem;
+  text-align: left;
+  font: weight: 300;
+`
+export const HomeSection5CustomBtn = styled.div`
+  background: #f49d2c;
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-direction: column;
+  width: 350px;
+  height: 60px;
+`
+export const HomeSection55px = styled.div`
+  padding: 0 0 5px 0;
 `

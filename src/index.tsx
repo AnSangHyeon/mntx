@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals'
 import { RouterStore as _RouterStore } from 'mobx-react-router'
 import { BrowserRouter } from 'react-router-dom'
 import Provider from './provider'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.css'
 
 declare global {
