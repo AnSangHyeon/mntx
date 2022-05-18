@@ -7,12 +7,17 @@ export const CustomWrapper = styled.header`
   width: 100%;
   height: 80px;
   background: #fff;
+  
+`
+export const HeaderFixed = styled.div` 
+  width: 100%;
   position: fixed;
-  z-index:100;
+  z-index: 1;
+
 `
 export const HeaderLeft = styled.div`
   float:left;
-  height: 100%;
+  
 `
 export const HeaderRight = styled.div`
   float:right;
@@ -438,5 +443,199 @@ export const FooterBtn3 = styled.div`
   align-items: center;
   background: #ffde00;
   color: #000;
-  
+`
+export const RecruitmentImg = styled.img` 
+  width: 100%;
+`
+export const RecruitmentFixed = styled.img` 
+  position: fixed;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  width: 934px;
+  margin: 0 auto;
+`
+export const ServiceSection1 = styled.div` 
+  padding: 100px 0;
+  background: #2a4a9e;
+`
+export const ServiceSection1All = styled.div` 
+  padding: 80px 0 0 0;
+`
+export const ServiceRow = styled(Row)` 
+  width: 1536px;
+  margin: 0 auto;
+`
+export const ServiceSection1Logo = styled.img` 
+  width: 523px;
+`
+export const ServiceSection1Title = styled.div` 
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: left;
+`
+export const ServiceSection1SubTitle = styled.div` 
+  color: #f49d2c;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 0 25px 0;
+`
+export const ServiceSection1Txt = styled.div` 
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 300;
+  text-align: left;
+`
+export const ServicePoint1 = styled.div`
+  height: 807.22px;
+  padding: 100px 0;
+`
+export const ServicePoint1Row = styled(Row)` 
+  width: 1200px;
+  height: 607.22px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+`
+export const ServicePoint1Title = styled.div` 
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 16px;
+`
+export const ServicePoint2Title = styled.div` 
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 16px;
+  text-align: left;
+`
+export const ServicePoint3Title = styled.div` 
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 16px;
+  text-align: right;
+`
+export const ServicePoint1SubTitle = styled.div` 
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 24px;
+`
+export const ServicePoint2SubTitle = styled.div` 
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 24px;
+  text-align: left;
+`
+export const ServicePoint3SubTitle = styled.div` 
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2a4a9e;
+  padding: 0 0 24px;
+  text-align: right;
+`
+export const ServicePoint1Txt = styled.div` 
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1b1d40;
+`
+export const ServicePoint2Txt = styled.div` 
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1b1d40;
+  text-align: left;
+`
+export const ServicePoint3Txt = styled.div` 
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1b1d40;
+  text-align: right;
+`
+export const ServicePoint1SubTxt = styled.div` 
+  text-decoration: underline;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 57.59px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+`
+export const ServicePoint1Logo = styled.img` 
+  padding: 80px 0 0 0;
+`
+export const ServicePoint2 = styled.div` 
+  height: 397px;
+  padding: 100px 0;
+  background: #eef1f7;
+`
+export const ServicePoint2Row = styled(Row)` 
+  width: 1200px;
+  margin: 0 auto;
+`
+export const ServicePoint2Col = styled(Col)` 
+  height: 193.63px;
+`
+export const ServicePoint2Logo = styled.img` 
+  float: right;
+`
+export const ServicePoint3 = styled.div` 
+  height: 544.84px;
+  padding: 100px 0;
+`
+export const ServicePoint3Row = styled(Row)` 
+  width: 1200px;
+  height: 344.84px;
+  margin: 0 auto;
+`
+export const ServicePoint3Logo = styled.div` 
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+`
+export const ServicePoint3TxtAll = styled.div` 
+  margin: 0 0 60px 0;
+`
+export const ServicePoint4 = styled.div` 
+  height: 484.84px;
+  background: #eef1f7;
+  padding: 100px 0;
+`
+export const ServicePoint4Row = styled(Row)` 
+  height: 284.84px;
+  width: 1200px;
+  margin: 0 auto;
+`
+export const ServicePoint4Logo = styled.div` 
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+`
+export const GuideSection1 = styled.div` 
+  height: 497px;
+  background: #2a4a9e;
+  padding: 100px 0 0 0;
+`
+export const GuideSectionAll = styled.div` 
+  padding: 80px 0 0 0;
+`
+export const GuideSection1Title = styled.div` 
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+`
+export const GuideSection1SubTitle = styled.div` 
+  color: #f49d2c;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 25px 0;
 `

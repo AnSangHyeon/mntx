@@ -36,7 +36,7 @@ const Login = loadComponent(() => import(/* webpackChunkName: "Home" */ '@pages/
 const App: React.FC<IAppProps> = (props: IAppProps) => {
   return (
     <div className="App">
-      <Header></Header>
+      
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Service' element={<Service />} />
@@ -47,7 +47,7 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
         <Route path='/Sign' element={<SignUp />} />
         <Route path='/Recruitment' element={<Recruitment />} />
       </Routes>
-      <Footer></Footer>
+      
     </div>
 
 
