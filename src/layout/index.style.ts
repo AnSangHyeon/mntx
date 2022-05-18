@@ -639,3 +639,29 @@ export const GuideSection1SubTitle = styled.div`
   text-align: center;
   margin: 0 0 25px 0;
 `
+export const GuideStep1 = styled.div` 
+  height: 670.02px;
+  padding: 100px 0 0 0;
+`
+export const GuideStep1Logo = styled.img` 
+  margin: 80px 0 0 0;
+`
+export const GuideStep2 = styled.div` 
+  background: #eef1f7;
+  height: 668.63px;
+  padding: 100px 0 0 0;
+`
+export const GuideStep3 = styled.div` 
+  height: 696.02px;
+  padding: 100px 0 0 0;
+`
+export const GuideStep4 = styled.div` 
+  height: 512.05px;
+  padding: 100px 0 0 0;
+  background: #eef1f7;
+`
+export const GuideStep4Logo = styled.img` 
+  width: 246px;
+  height: 229.64px;
+  margin: 56px 0 0 0;
+`
