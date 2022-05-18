@@ -40,7 +40,7 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
           <LinkLineNone to="/Fare">
             <MainMenu>예상요금</MainMenu>
           </LinkLineNone>
-          <LinkLineNone to="/">
+          <LinkLineNone to="/Recruitment">
             <MainMenu>인재 모집</MainMenu>
           </LinkLineNone>
         </HeaderLeft>

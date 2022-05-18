@@ -4,7 +4,7 @@ import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from '@components/Loader'
 import Header from '@layout/Header'
-import { AccordionA, AccordionA1, AccordionA2, AccordionAll, AccordionBody, AccordionBody1, AccordionBody2, AccordionHead, AccordionItem, AccordionTxt, AccordionTxtLeft, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4Notice1, HomeSection4Notice2, HomeSection4Padding, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeSection4Txt1, HomeSection4TxtRed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
+import { AccordionA, AccordionA1, AccordionA2, AccordionAll, AccordionBody, AccordionBody1, AccordionBody2, AccordionHead, AccordionItem, AccordionTxt, AccordionTxtLeft, CustomBtn, CustomBtnPosition, HomeContents, HomeContentsBottomMargin, HomeContentsTopMargin, HomeLogo, HomeLogo1, HomeLogo2, HomeSection1, HomeSection2, HomeSection2All, HomeSection3, HomeSection3All, HomeSection3Contents, HomeSection3ContentsCenter, HomeSection3ContentsEnd, HomeSection3ContentsHighlight, HomeSection3ContentsHighlight2, HomeSection3ContentsImg, HomeSection3ContentsText, HomeSection3ContentsText1, HomeSection3ContentsText2, HomeSection3Img4, HomeSection3Title, HomeSection4,  HomeSection4All, HomeSection4Btn, HomeSection4BtnHighlight, HomeSection4BtnImg, HomeSection4BtnRight, HomeSection4Notice1, HomeSection4Notice2, HomeSection4Padding, HomeSection4SubTitle, HomeSection4Title, HomeSection4Txt, HomeSection4Txt1, HomeSection4TxtRed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Img, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title, HomeTitle, LinkLineNone, Section2ContentsImg } from '@layout/index.style'
 import HomeTopImg from '../../img/home.png'
 import HomeText from '../../img/hometext.png'
 import Mntx from '../../img/mntx.png'
@@ -251,7 +251,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           
           </HomeSection5Col>
           <HomeSection5Col xs={12} md={6}>
-            <img src={ Section3Contents5Img } alt="" />
+            <HomeSection5Img src={ Section3Contents5Img } alt="" />
           </HomeSection5Col>
         </HomeSection5Row>
         

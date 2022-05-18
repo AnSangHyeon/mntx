@@ -1,4 +1,4 @@
-import { Accordion, Col, Container, Row } from "react-bootstrap"
+import { Accordion, Button, Col, Container, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
@@ -374,4 +374,69 @@ export const HomeSection5CustomBtn = styled.div`
 `
 export const HomeSection55px = styled.div`
   padding: 0 0 5px 0;
+`
+export const HomeSection5Img = styled.img`
+  width: 100%;
+  height: 100%;
+`
+export const FooterAll = styled.div`
+  width: 100%;
+  font-size: 1rem;
+  background: #222837;
+  color: #afb3bd;
+`
+export const FooterInfo = styled.div`
+  padding: 60px 183.5px;
+`
+export const FooterLogo = styled.img` 
+  display: flex;
+  padding: 0 0 30px 0;
+`
+export const FooterMainTxt = styled.div` 
+  color: #afb3bd;
+  font-size: 1rem;
+  text-align: left;
+`
+export const Top30pxPadding = styled.div`
+  padding: 30px 0 0 0;
+`
+export const FooterBtn = styled(Button)`
+  height: 40px;
+  width: 90.89px;
+`
+export const FooterBtn2 = styled(Button)`
+  height: 40px;
+  width: 179.2px;
+`
+export const FooterBtnAll = styled.div` 
+  height: 64px;
+  width: 100%;
+  display: inline-flex;
+  align-items: end;
+  justify-content: start;
+`
+export const FooterTitle = styled.div`
+  color: #dbdee6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: right;
+`
+export const FooterSubTitle = styled.div`
+  color: #dbdee6;
+  font-size: 1rem;
+  text-align: right;
+`
+export const FooterBtn3 = styled.div` 
+  width: 200px;
+  height: 45px;
+  margin: 20px 0 0 0;
+  border-radius: 30px;
+  float: right;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffde00;
+  color: #000;
+  
 `

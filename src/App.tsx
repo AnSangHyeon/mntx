@@ -19,6 +19,7 @@ import Guide from '@pages/Guide'
 import Reservation from '@pages/Reservation'
 import Fare from '@pages/Fare'
 import SignUp from '@pages/Sign'
+import Recruitment from '@pages/Recruitment'
 
 
 
@@ -36,7 +37,6 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
   return (
     <div className="App">
       <Header></Header>
-
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Service' element={<Service />} />
@@ -45,8 +45,9 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
         <Route path='/Fare' element={<Fare />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Sign' element={<SignUp />} />
+        <Route path='/Recruitment' element={<Recruitment />} />
       </Routes>
-
+      <Footer></Footer>
     </div>
 
 
