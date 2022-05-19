@@ -1,4 +1,6 @@
-import { Accordion, Button, Col, Container, Row } from "react-bootstrap"
+import { faAngleLeft } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Accordion, Button, Col, Container, Form, Row } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
@@ -6,14 +8,12 @@ import styled from "styled-components"
 export const CustomWrapper = styled.header`
   width: 100%;
   height: 80px;
-  background: #fff;
-  
 `
 export const HeaderFixed = styled.div` 
   width: 100%;
   position: fixed;
   z-index: 1;
-
+  background: #fff;
 `
 export const HeaderLeft = styled.div`
   float:left;
@@ -27,7 +27,6 @@ export const HeaderIogo = styled.div`
   width:128px;
   height: 79px;
   display:inline-block
-
 `
 export const MainMenu = styled.div`
   position: relative;
@@ -65,9 +64,13 @@ export const HeaderSign = styled.div`
   align-items:center;
   justify-content: center;
 `
+export const All = styled.div` 
+  padding: 80px 0 0 0;
+  height: 80px;
+`
 export const HomeSection1 = styled.div`
   background: #feefd4;  
-  padding: 175px 0px 150px 0px;
+  padding: 95px 0px 150px 0px;
 `
 export const HomeLogo = styled.div`
   
@@ -664,4 +667,165 @@ export const GuideStep4Logo = styled.img`
   width: 246px;
   height: 229.64px;
   margin: 56px 0 0 0;
+`
+export const ReservationHeader = styled.div` 
+  background: #2a4a9e;
+  width: 100%;
+  
+`
+export const ReservationAll = styled.div` 
+  height: 411.33px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+  
+`
+export const ReservationTitle = styled.div` 
+  font-size: 36px;
+  color: #2a4a9e;
+  font-weight: 800;
+  margin: 0 0 0 30px;
+  width: 308.17px;
+  height: 124.58px;
+  
+`
+export const ReservationLogo = styled.img` 
+  width: 112.69px;
+  height: 124.58px;
+  float: left;
+`
+export const ReservationLogoSize = styled.div`
+  width: 161px;
+  height: 124.58px;
+` 
+export const ReservationNmember = styled.div` 
+  height: 206.75px;
+  padding: 30px 0 50px 0;
+  border-top: 2px solid #2a4a9e;
+  font-size: 1.3rem;
+  text-align: center;
+`
+export const ReservationBetween = styled.div` 
+  height: 124.58px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+`
+export const ReservationCustomBtn = styled.div` 
+  background: rgb(42, 74, 158);
+  color: #fff;
+  padding: 15px 45px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 296.58px;
+  height: 54px;
+  margin: 0 auto;
+`
+export const FareCustomBtn = styled(Button)` 
+  width: 28.58px;
+  height: 30px;
+  padding: 0 7px;
+  border-radius: 100%;
+`
+export const FareCntNum = styled.div` 
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  width: 8.89px;
+  height: 24px;
+`
+export const FareLeftIcon = styled(FontAwesomeIcon)` 
+  width: 11.44px;
+  height: 16px;
+`
+export const FareAll = styled.div` 
+  height: 841px;
+`
+export const FareContainerAll = styled(Container)` 
+  height: 681px;
+  width: 100%;
+`
+export const FareContainer1 = styled(Container)` 
+  padding: 0 20px 10px 20px;
+  margin: 0 auto;
+`
+export const FareCol1 = styled(Col)` 
+  margin: 50px 0 0 0; 
+`
+
+export const FareRow1 = styled(Row)` 
+  width: 752px;
+  margin: 0 auto;
+`
+export const FontColorBlack = styled.div` 
+  color: black;
+  float: left;
+`
+export const FareContainer2 = styled(Container)` 
+  height: 535px;
+  margin: 30px 0 0 0;
+  padding: 20px;
+`
+export const FareRow2 = styled(Row)` 
+  width: 752px;
+  margin: 0 auto;
+  height: 169px;
+`
+export const FareCol2 = styled(Col)` 
+  margin: 15px 0 30px 0;
+  height: 54px;
+  color: #2a4a9e;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: left;
+`
+export const FareCol3 = styled(Col)` 
+  height: 70px;
+`
+export const FareColTxt = styled.div` 
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+  height: 24px;
+  display: block
+`
+export const FareColTxt2 = styled.div` 
+  margin: 0 0 0.5rem 0;
+  text-align: left;
+  height: 24px;
+  width: 352px;
+  
+`
+export const FareCol4F = styled(Col)` 
+  height: 100%;
+  display: flex;
+`
+export const FareCol4 = styled(Col)` 
+  height: 100%;
+  width: 50%;
+  display: inline-flex;
+  align-items: end;
+`
+export const FareRow4 = styled(Row)` 
+  width: 752px;
+  margin: 0 auto;
+  height: 78px;
+`
+export const FareMarginTop = styled.div` 
+  margin: 1rem 0 0 0;
+`
+export const FareCheckbox = styled(Form.Check)` 
+  padding: 0 8px 0 0;
+  display: inline-block;
+`
+export const FareCheckAll = styled.div` 
+  width: 100%;
+  
+  
+  text-align: left;
+  
+`
+export const FareCheckFlex = styled.div``
+
+export const FareRow5 = styled(Row)` 
+  width: 752px;
+  height: 70px;
+  margin: 0 auto;
 `
