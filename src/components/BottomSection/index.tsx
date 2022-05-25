@@ -1,6 +1,6 @@
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
-import { HeaderFixed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Img, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title } from '@layout/index.style'
+import { HeaderFixed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Img, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title, LinkLineNone } from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import Section3Contents5Img from '../../img/HomeSection5Img.png'
@@ -24,7 +24,10 @@ const BottomSection: React.FC<IProps> = (props: IProps) => {
             <HomeSection5SubTitle>멍타냥 택시가 더 나은 반려동물과의 생활을 만들어갑니다.</HomeSection5SubTitle>
             <HomeSection525px></HomeSection525px>
             <HomeSection55px></HomeSection55px>
-            <HomeSection5CustomBtn>지금 예약하기</HomeSection5CustomBtn>
+            <LinkLineNone to='/Reservation'>
+              <HomeSection5CustomBtn>지금 예약하기</HomeSection5CustomBtn>
+            </LinkLineNone>
+            
           
           </HomeSection5Col>
           <HomeSection5Col xs={12} md={6}>

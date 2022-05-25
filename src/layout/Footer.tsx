@@ -20,6 +20,7 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
 
   return (
     <Fragment>
+
       <FooterAll>
         <FooterInfo>
           <FooterLogo src={ FooterImg } alt="" />

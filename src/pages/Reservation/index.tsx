@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const Reservation: React.FC<IProps> = (props: IProps) => {
-  useOnMount(() => {})
+  useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
   return (
     <Fragment>

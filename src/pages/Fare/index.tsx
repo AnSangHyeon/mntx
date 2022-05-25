@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from '@layout/Header'
-import { All, FareAll, FareCheckAll, FareCheckbox, FareCheckFlex, FareCntNum, FareCol1, FareCol2, FareCol3, FareCol4, FareCol4F, FareColTxt, FareColTxt2, FareContainer1, FareContainer2, FareContainerAll, FareCustomBtn, FareLeftIcon, FareMarginTop, FareRow1, FareRow2, FareRow4, FareRow5, FontColorBlack, HeaderFixed, LinkLineNone } from '@layout/index.style'
+import { All, FareAll, FareCheckAll, FareCheckbox, FareCheckFlex, FareCntNum, FareCol1, FareCol2, FareCol3, FareCol4, FareCol4F, FareColTxt, FareColTxt2, FareContainer1, FareContainer2, FareContainerAll, FareCustomBtn, FareLeftIcon, FareMarginTop, FarePlusMinus, FarePlusMinusAll, FareRow1, FareRow2, FareRow4, FareRow5, FareSaveBtn, FareSaveContainer, FareSaveLeft, FareSaveRight, FareSaveRow, FareSpaceCol, FontColorBlack, HeaderFixed, LinkLineNone } from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment, useState } from 'react'
 import { Button, Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootstrap'
@@ -17,7 +17,7 @@ interface IProps {
 
 }
 const Fare: React.FC<IProps> = (props: IProps) => {
-  useOnMount(() => {})
+  useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
   const [cnt, setCnt] = useState(0)
   const PlusBtn = () => {
@@ -52,14 +52,14 @@ const Fare: React.FC<IProps> = (props: IProps) => {
               <FareCol3>
               <FareColTxt>주행 시간</FareColTxt>
               <InputGroup>
-                <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
+                <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
                 <InputGroup.Text>분</InputGroup.Text>
               </InputGroup>
               </FareCol3>
               <FareCol3>
                 <FareColTxt>주행 거리</FareColTxt>
                 <InputGroup>
-                  <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
+                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
                   <InputGroup.Text>km</InputGroup.Text>
                 </InputGroup>
               </FareCol3>
@@ -69,17 +69,20 @@ const Fare: React.FC<IProps> = (props: IProps) => {
 
             <FareRow4>
               <FareCol4F md={6}>
-              {/* <FareColTxt2>반려동물 수</FareColTxt2> */}
-                <FareCustomBtn onClick={ MinusBtn } variant="outline-primary">
-                  <FontAwesomeIcon icon={ faMinus } />
-                </FareCustomBtn>{' '}
-                &nbsp;<FareCntNum>{ cnt }</FareCntNum>&nbsp;
-                <FareCustomBtn onClick={ PlusBtn } variant="outline-primary">
-                  <FontAwesomeIcon icon={ faPlus } />
-                </FareCustomBtn>{' '} &nbsp;
-                <FareColTxt>마리</FareColTxt>
+                <FarePlusMinusAll>
+                  <FareColTxt2>반려동물 수</FareColTxt2>
+                  <FarePlusMinus>
+                    <FareCustomBtn onClick={ MinusBtn } variant="outline-primary">
+                      <FontAwesomeIcon icon={ faMinus } />
+                    </FareCustomBtn>{' '}
+                    &nbsp;<FareCntNum>{ cnt }</FareCntNum>&nbsp;
+                    <FareCustomBtn onClick={ PlusBtn } variant="outline-primary">
+                      <FontAwesomeIcon icon={ faPlus } />
+                    </FareCustomBtn>{' '} &nbsp;
+                    <FareColTxt>마리</FareColTxt>
+                  </FarePlusMinus>
+                </FarePlusMinusAll>
               </FareCol4F>
-
               <FareCol4 md={6}>
                 <FareCheckFlex>
                   <FareCheckAll>
@@ -97,25 +100,41 @@ const Fare: React.FC<IProps> = (props: IProps) => {
             <FareMarginTop></FareMarginTop>
 
             <FareRow5>
-              <FareCol3>
+              <FareCol3 md={6}>
                 <FareColTxt>통행료</FareColTxt>
                 <InputGroup>
-                  <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
+                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
                   <InputGroup.Text>원</InputGroup.Text>
                 </InputGroup>
               </FareCol3>
-              <FareCol3>
+              <FareCol3 md={6}>
                 <FareColTxt>왕복/경유시 대기 시간</FareColTxt>
                 <InputGroup>
-                  <FormControl aria-label="Dollar amount (with dot and two decimal places)" />
+                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
                   <InputGroup.Text>분</InputGroup.Text>
                 </InputGroup>
               </FareCol3>
+
+              <FareMarginTop></FareMarginTop>
+
+              <FareSpaceCol md={6}></FareSpaceCol>
+              <FareSpaceCol md={6}></FareSpaceCol>
+
+              <FareMarginTop></FareMarginTop>
+
+              <FareSaveBtn>계산하기</FareSaveBtn>
             </FareRow5>
           </FareContainer2>
-          <Container>3
-          
-          </Container>
+          <FareSaveContainer>
+            <FareSaveRow>
+              <FareSaveLeft md={5}>
+                최종요금
+              </FareSaveLeft>
+              <FareSaveRight md={7}>
+                8,000원
+              </FareSaveRight>
+            </FareSaveRow>
+          </FareSaveContainer>
 
         </FareContainerAll>
         

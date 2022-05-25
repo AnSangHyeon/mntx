@@ -1,5 +1,5 @@
 import Header from '@layout/Header'
-import { RecruitmentFixed, RecruitmentImg } from '@layout/index.style'
+import { LinkLineNone, RecruitmentFixed, RecruitmentImg } from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import RecruitmentImg1 from '../../img/Recruitment1.jpg'
@@ -14,12 +14,15 @@ interface IProps {
 }
 
 const Recruitment: React.FC<IProps> = (props: IProps) => {
-  useOnMount(() => {})
+  useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
   return (
     <Fragment>
       <Header></Header>
-      <RecruitmentFixed src={ RecruitmentFixedImg } alt="멍타냥택시 드라이버 지원하기" />
+      <LinkLineNone to='#'>
+        <RecruitmentFixed src={ RecruitmentFixedImg } alt="멍타냥택시 드라이버 지원하기" />
+      </LinkLineNone>
+      
       <RecruitmentImg src={ RecruitmentImg1 }/>
       <RecruitmentImg src={ RecruitmentImg2 }/>
       <RecruitmentImg src={ RecruitmentImg3 }/>

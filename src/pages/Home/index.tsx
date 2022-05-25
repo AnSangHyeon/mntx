@@ -32,7 +32,23 @@ interface IHomeProps {
 
 
 const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
-  useOnMount(() => {})
+  function ScrollClick1() {
+    window.scrollTo({top:567, behavior:'smooth'})
+  }
+  function ScrollClick2() {
+    window.scrollTo({top:1374, behavior:'smooth'})
+  }
+
+  function ScrollClick3() {
+    window.scrollTo({top:1771, behavior:'smooth'})
+  }
+
+  function ScrollClick4() {
+    window.scrollTo({top:2316, behavior:'smooth'})
+  }
+
+
+  useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
   return (
     
@@ -68,22 +84,22 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <HomeContents>집 앞에서부터 원하는 목적지까지 안전하고 편안한 이동을 선사합니다.</HomeContents>
           <HomeContentsBottomMargin></HomeContentsBottomMargin>
           <Section2ContentsImg>
-            <LinkLineNone to='/Guide'>
+            <LinkLineNone onClick={ScrollClick1} to='/Service'>
               <img src={ Section2Contents1 } alt="" />
             </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <LinkLineNone to='/Guide'>
+            <LinkLineNone onClick={ScrollClick2} to='/Service'>
               <img src={ Section2Contents2 } alt="" />
             </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <LinkLineNone to='/Guide'>
+            <LinkLineNone onClick={ScrollClick3} to='/Service'>
               <img src={ Section2Contents3 } alt="" />
             </LinkLineNone>
           </Section2ContentsImg>
           <Section2ContentsImg>
-            <LinkLineNone to='/Guide'>
+            <LinkLineNone onClick={ScrollClick4} to='/Service'>
               <img src={ Section2Contents4 } alt="" />
             </LinkLineNone>
           </Section2ContentsImg>
@@ -156,7 +172,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <HomeSection4SubTitle>자주 묻는 질문 내용을 확인하세요.</HomeSection4SubTitle>
           
           <AccordionAll>
-            <Accordion defaultActiveKey="0">
+            <Accordion>
               <AccordionItem eventKey='0'>
                 <AccordionHead>
                   <AccordionTxt>

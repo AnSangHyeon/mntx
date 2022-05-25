@@ -15,9 +15,11 @@ interface IProps {
 }
 
 const Guide: React.FC<IProps> = (props: IProps) => {
-  useOnMount(() => {})
+  useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
+  
   return (
+    
     <Fragment>
       <HeaderFixed>
         <Header></Header>

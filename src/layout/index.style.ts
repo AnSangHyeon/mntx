@@ -1,6 +1,7 @@
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Accordion, Button, Col, Container, Form, Row } from "react-bootstrap"
+import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
@@ -17,6 +18,15 @@ export const HeaderFixed = styled.div`
 `
 export const HeaderLeft = styled.div`
   float:left;
+`
+export const ReservationHeader = styled.div` 
+  background: #2a4a9e;
+  width: 100%;
+  
+`
+export const LinkLineNone = styled(NavLink)`
+  text-decoration: none;
+  color: #000;
   
 `
 export const HeaderRight = styled.div`
@@ -26,7 +36,8 @@ export const HeaderIogo = styled.div`
   padding:14px 10px;
   width:128px;
   height: 79px;
-  display:inline-block
+  display:inline-block;
+  
 `
 export const MainMenu = styled.div`
   position: relative;
@@ -34,30 +45,27 @@ export const MainMenu = styled.div`
   font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
-  color: #000;
   width: 150px;
   height: 80px;
   padding:0px 20px;
   align-items:center;
   justify-content: center;
+ 
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
-  color: #000;
   width: 97.42px;
   height: 80px;
   padding:0px 20px;
   align-items:center;
   justify-content: center;
-  
 `
 export const HeaderSign = styled.div`
   font-size:1.3rem;
   font-weight: 600;
   display:inline-flex;
-  color: #000;
   width: 116.55px;
   height: 80px;
   padding:0px 20px;
@@ -250,9 +258,6 @@ export const HomeSection4BtnImg = styled.img`
 `
 export const HomeSection4BtnRight = styled.div`
   
-`
-export const LinkLineNone = styled(Link)`
-  text-decoration: none;
 `
 export const AccordionItem = styled(Accordion.Item)`
   width: 900px;
@@ -668,11 +673,6 @@ export const GuideStep4Logo = styled.img`
   height: 229.64px;
   margin: 56px 0 0 0;
 `
-export const ReservationHeader = styled.div` 
-  background: #2a4a9e;
-  width: 100%;
-  
-`
 export const ReservationAll = styled.div` 
   height: 411.33px;
   width: 60%;
@@ -726,18 +726,20 @@ export const FareCustomBtn = styled(Button)`
   height: 30px;
   padding: 0 7px;
   border-radius: 100%;
+  display: inline-block;
 `
 export const FareCntNum = styled.div` 
-  margin: 0 0.5rem 0.5rem 0.5rem;
+  margin: 0 8px 8px 8px;
   width: 8.89px;
   height: 24px;
+
 `
 export const FareLeftIcon = styled(FontAwesomeIcon)` 
   width: 11.44px;
   height: 16px;
 `
 export const FareAll = styled.div` 
-  height: 841px;
+  height: 781px;
 `
 export const FareContainerAll = styled(Container)` 
   height: 681px;
@@ -791,7 +793,6 @@ export const FareColTxt2 = styled.div`
   text-align: left;
   height: 24px;
   width: 352px;
-  
 `
 export const FareCol4F = styled(Col)` 
   height: 100%;
@@ -828,4 +829,54 @@ export const FareRow5 = styled(Row)`
   width: 752px;
   height: 70px;
   margin: 0 auto;
+`
+export const FarePlusMinusAll = styled.div` 
+  width: 100%;
+  height: 100%
+`
+export const FarePlusMinus = styled.div` 
+  width: 100%;
+  height: 100%;
+  display: flex;
+`
+export const FareSpaceCol = styled(Col)` 
+  height: 70px;
+`
+export const FareSaveBtn = styled.div` 
+  width: 100%
+  padding: 10px;
+  border-radius: 45px;
+  background: #f49d2c;
+  color: #fff;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+export const FareSaveRow = styled(Row)` 
+  width: 768px;
+  height: 82px;
+  background: #f1f1f1;
+  padding: 20px;
+`
+export const FareSaveContainer = styled(Container)` 
+  // display: flex;
+  // justify-content: center;
+  // align-items: start;
+  width: 100%;
+  margin: 0 0 50px 0;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+`
+export const FareSaveLeft = styled(Col)` 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+`
+export const FareSaveRight = styled(Col)` 
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.75rem;
 `
