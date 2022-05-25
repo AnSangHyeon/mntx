@@ -1,6 +1,6 @@
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Accordion, Button, Col, Container, Form, Row } from "react-bootstrap"
+import { Accordion, Button, Col, Container, Form, Modal, Row } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
@@ -879,4 +879,29 @@ export const FareSaveRight = styled(Col)`
   text-align: right;
   font-weight: 700;
   font-size: 1.75rem;
+`
+export const FooterModalTitle = styled(Modal.Title)` 
+  font-weight: 500;
+  font-size: 20px;
+`
+export const FooterModalTxt = styled.div` 
+  padding: 10px;
+  font-size: 16px;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  text-align: left;
+  overflow:scroll; 
+`
+export const FooterModalAll = styled(Modal.Dialog)` 
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  margin: 1.75rem auto;
+  z-index: 2;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
 `
