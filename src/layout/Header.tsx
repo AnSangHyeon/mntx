@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import { Link } from 'react-router-dom'
 import HeaderImg from "../img/header.png"
@@ -7,14 +7,10 @@ import { CustomWrapper, HeaderIogo, HeaderLeft, HeaderLogin, HeaderRight, Header
 interface IHeaderProps {}
 
 const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
+  useOnMount(() => {})
+  useOnUnmount(() => {})
   
-  useOnMount(() => {
-    
-  })
-
-  useOnUnmount(() => {
-
-  })
+  
   
   return (
     <Fragment>

@@ -15,6 +15,7 @@ export const HeaderFixed = styled.div`
   position: fixed;
   z-index: 1;
   background: #fff;
+  height: 80px;
 `
 export const HeaderLeft = styled.div`
   float:left;
@@ -22,7 +23,7 @@ export const HeaderLeft = styled.div`
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
   width: 100%;
-  
+  height: 80px;
 `
 export const LinkLineNone = styled(NavLink)`
   text-decoration: none;
@@ -50,7 +51,11 @@ export const MainMenu = styled.div`
   padding:0px 20px;
   align-items:center;
   justify-content: center;
- 
+  &:hover {
+    line-height: 40px; 
+    color: #2a4a9e; 
+    border-bottom: 3px solid #2a4a9e;
+  }
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
@@ -61,6 +66,11 @@ export const HeaderLogin = styled.div`
   padding:0px 20px;
   align-items:center;
   justify-content: center;
+  &:hover {
+    line-height: 40px; 
+    color: #2a4a9e; 
+    border-bottom: 3px solid #2a4a9e;
+  }
 `
 export const HeaderSign = styled.div`
   font-size:1.3rem;
@@ -71,6 +81,11 @@ export const HeaderSign = styled.div`
   padding:0px 20px;
   align-items:center;
   justify-content: center;
+  &:hover {
+    line-height: 40px; 
+    color: #2a4a9e; 
+    border-bottom: 3px solid #2a4a9e; 
+  }
 `
 export const All = styled.div` 
   padding: 80px 0 0 0;
@@ -78,7 +93,8 @@ export const All = styled.div`
 `
 export const HomeSection1 = styled.div`
   background: #feefd4;  
-  padding: 95px 0px 150px 0px;
+  padding: 95px 0px 105px 0px;
+  
 `
 export const HomeLogo = styled.div`
   
@@ -860,9 +876,6 @@ export const FareSaveRow = styled(Row)`
   padding: 20px;
 `
 export const FareSaveContainer = styled(Container)` 
-  // display: flex;
-  // justify-content: center;
-  // align-items: start;
   width: 100%;
   margin: 0 0 50px 0;
   display: flex;
@@ -888,20 +901,33 @@ export const FooterModalTxt = styled.div`
   padding: 10px;
   font-size: 16px;
   height: 200px;
-  width: 100%;
-  border: 1px solid #d7d7d7;
   text-align: left;
-  overflow:scroll; 
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+
+  font-family: monospace;
+  white-space: pre-wrap;
 `
-export const FooterModalAll = styled(Modal.Dialog)` 
+export const ModalFooter = styled(Modal.Footer)` 
+  height: 73px;
+`
+
+export const BodyModal = styled(Modal.Body)` 
+  height: 232px;
+`
+export const FooterModal = styled(Modal.Dialog)` 
+  width: 500px;
+  
+  
+`
+export const FooterModalAll = styled.div` 
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translate(-50%,0);
-  margin: 1.75rem auto;
+  left: 0;
   z-index: 2;
-  overflow-x: hidden;
-  overflow-y: auto;
+  width: 100%;
+  height: 100%;
   display: none;
-  background: rgba(0, 0, 0, 0.6);
 `
+
