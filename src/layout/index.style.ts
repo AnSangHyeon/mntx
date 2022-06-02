@@ -19,6 +19,7 @@ export const HeaderFixed = styled.div`
 `
 export const HeaderLeft = styled.div`
   float:left;
+  height: 80px;
 `
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
@@ -45,17 +46,11 @@ export const MainMenu = styled.div`
   top: 0;
   font-size:1.3rem;
   font-weight: 600;
-  display:inline-flex;
+  display: inline-block;
   width: 150px;
-  height: 80px;
   padding:0px 20px;
-  align-items:center;
-  justify-content: center;
-  &:hover {
-    line-height: 40px; 
-    color: #2a4a9e; 
-    border-bottom: 3px solid #2a4a9e;
-  }
+  line-height: 80px;
+  
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
@@ -66,11 +61,6 @@ export const HeaderLogin = styled.div`
   padding:0px 20px;
   align-items:center;
   justify-content: center;
-  &:hover {
-    line-height: 40px; 
-    color: #2a4a9e; 
-    border-bottom: 3px solid #2a4a9e;
-  }
 `
 export const HeaderSign = styled.div`
   font-size:1.3rem;
@@ -81,11 +71,6 @@ export const HeaderSign = styled.div`
   padding:0px 20px;
   align-items:center;
   justify-content: center;
-  &:hover {
-    line-height: 40px; 
-    color: #2a4a9e; 
-    border-bottom: 3px solid #2a4a9e; 
-  }
 `
 export const All = styled.div` 
   padding: 80px 0 0 0;
@@ -930,4 +915,39 @@ export const FooterModalAll = styled.div`
   height: 100%;
   display: none;
 `
-
+export const HeaderUnderLineMenu = styled.div` 
+  width: 150px;
+  height: 80px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  &:hover {
+    border-bottom: 3px solid #2a4a9e;
+    color: #2a4a9e; 
+    height: 80px;
+  }
+`
+export const HeaderUnderLineLog = styled.div` 
+  width: 97.42px;
+  height: 80px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  &:hover {
+    border-bottom: 3px solid #2a4a9e;
+    color: #2a4a9e; 
+    height: 80px;
+  }
+`
+export const HeaderUnderLineSign = styled.div` 
+  width: 97.42px;
+  height: 80px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  &:hover {
+    border-bottom: 3px solid #2a4a9e;
+    color: #2a4a9e; 
+    height: 80px;
+  }
+`
