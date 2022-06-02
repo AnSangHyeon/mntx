@@ -9,6 +9,7 @@ import styled from "styled-components"
 export const CustomWrapper = styled.header`
   width: 100%;
   height: 80px;
+  
 `
 export const HeaderFixed = styled.div` 
   width: 100%;
@@ -16,6 +17,7 @@ export const HeaderFixed = styled.div`
   z-index: 1;
   background: #fff;
   height: 80px;
+ 
 `
 export const HeaderLeft = styled.div`
   float:left;
@@ -25,11 +27,10 @@ export const ReservationHeader = styled.div`
   background: #2a4a9e;
   width: 100%;
   height: 80px;
+
 `
 export const LinkLineNone = styled(NavLink)`
   text-decoration: none;
-  color: #000;
-  
 `
 export const HeaderRight = styled.div`
   float:right;
@@ -50,7 +51,6 @@ export const MainMenu = styled.div`
   width: 150px;
   padding:0px 20px;
   line-height: 80px;
-  
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
@@ -919,7 +919,7 @@ export const HeaderUnderLineMenu = styled.div`
   width: 150px;
   height: 80px;
   text-decoration: none;
-  color: #000;
+  
   display: inline-block;
   &:hover {
     border-bottom: 3px solid #2a4a9e;
@@ -931,7 +931,7 @@ export const HeaderUnderLineLog = styled.div`
   width: 97.42px;
   height: 80px;
   text-decoration: none;
-  color: #000;
+  
   display: inline-block;
   &:hover {
     border-bottom: 3px solid #2a4a9e;
@@ -943,11 +943,29 @@ export const HeaderUnderLineSign = styled.div`
   width: 97.42px;
   height: 80px;
   text-decoration: none;
-  color: #000;
+  
   display: inline-block;
   &:hover {
     border-bottom: 3px solid #2a4a9e;
     color: #2a4a9e; 
     height: 80px;
   }
+`
+export const MainMenuActive = styled.div`
+  position: relative;
+  top: 0;
+  font-size:1.3rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 150px;
+  padding:0px 20px;
+  line-height: 80px;
+  
+  &:active {
+    color: #fff;
+  }
+`
+export const HeaderLink = styled(NavLink)`
+  text-decoration: none;
+  color: #000;
 `
