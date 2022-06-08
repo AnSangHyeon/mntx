@@ -1,7 +1,22 @@
 import BottomSection from '@components/BottomSection'
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
-import { GuideStep1Logo, GuideSection1, GuideSection1SubTitle, GuideSection1Title, GuideSectionAll, GuideStep1, HeaderFixed, ServicePoint1SubTitle, ServicePoint1Title, ServicePoint1Txt, GuideStep2, GuideStep3, GuideStep4, GuideStep4Logo } from '@layout/index.style'
+import { 
+  GuideStep1Logo, 
+  GuideSection1, 
+  GuideSection1SubTitle,
+  GuideSection1Title,
+  GuideSectionAll,
+  GuideStep1,
+  HeaderFixed,
+  ServicePoint1SubTitle,
+  ServicePoint1Title,
+  ServicePoint1Txt,
+  GuideStep2,
+  GuideStep3,
+  GuideStep4,
+  GuideStep4Logo
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import GuideSection1Img from '../../img/guidesection1.png'

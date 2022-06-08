@@ -1,5 +1,9 @@
 import Header from '@layout/Header'
-import { LinkLineNone, RecruitmentFixed, RecruitmentImg } from '@layout/index.style'
+import { 
+  LinkLineNone, 
+  RecruitmentFixed, 
+  RecruitmentImg 
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import RecruitmentImg1 from '../../img/Recruitment1.jpg'

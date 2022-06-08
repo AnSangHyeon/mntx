@@ -1,7 +1,40 @@
 import BottomSection from '@components/BottomSection'
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
-import { HeaderFixed, HeaderLeft, ServicePoint1, ServicePoint1Logo, ServicePoint1Row, ServicePoint1SubTitle, ServicePoint1SubTxt, ServicePoint1Title, ServicePoint1Txt, ServicePoint2, ServicePoint2Col, ServicePoint2Logo, ServicePoint2Row, ServicePoint2SubTitle, ServicePoint2Title, ServicePoint2Txt, ServicePoint3, ServicePoint3Logo, ServicePoint3Row, ServicePoint3SubTitle, ServicePoint3Title, ServicePoint3Txt, ServicePoint3TxtAll, ServicePoint4, ServicePoint4Logo, ServicePoint4Row, ServiceRow, ServiceSection1, ServiceSection1All, ServiceSection1Logo, ServiceSection1SubTitle, ServiceSection1Title, ServiceSection1Txt } from '@layout/index.style'
+import { 
+  HeaderFixed, 
+  ServicePoint1, 
+  ServicePoint1Logo, 
+  ServicePoint1Row, 
+  ServicePoint1SubTitle, 
+  ServicePoint1SubTxt, 
+  ServicePoint1Title, 
+  ServicePoint1Txt, 
+  ServicePoint2, 
+  ServicePoint2Col, 
+  ServicePoint2Logo, 
+  ServicePoint2Row, 
+  ServicePoint2SubTitle,
+  ServicePoint2Title,
+  ServicePoint2Txt,
+  ServicePoint3,
+  ServicePoint3Logo,
+  ServicePoint3Row,
+  ServicePoint3SubTitle, 
+  ServicePoint3Title, 
+  ServicePoint3Txt, 
+  ServicePoint3TxtAll, 
+  ServicePoint4, 
+  ServicePoint4Logo, 
+  ServicePoint4Row, 
+  ServiceRow, 
+  ServiceSection1, 
+  ServiceSection1All, 
+  ServiceSection1Logo, 
+  ServiceSection1SubTitle, 
+  ServiceSection1Title, 
+  ServiceSection1Txt 
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import { Col, Row } from 'react-bootstrap'

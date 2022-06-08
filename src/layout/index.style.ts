@@ -1,6 +1,15 @@
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Accordion, Button, Col, Container, Form, Modal, Row } from "react-bootstrap"
+import { useState } from "react"
+import { 
+  Accordion, 
+  Button, 
+  Col, 
+  Container, 
+  Form, 
+  Modal, 
+  Row 
+} from "react-bootstrap"
 import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
@@ -17,7 +26,7 @@ export const HeaderFixed = styled.div`
   z-index: 1;
   background: #fff;
   height: 80px;
- 
+  
 `
 export const HeaderLeft = styled.div`
   float:left;
@@ -25,6 +34,13 @@ export const HeaderLeft = styled.div`
 `
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
+  width: 100%;
+  height: 80px;
+
+`
+
+export const ReservationHeader2 = styled.div` 
+  background: #fff;
   width: 100%;
   height: 80px;
 
@@ -675,7 +691,7 @@ export const GuideStep4Logo = styled.img`
   margin: 56px 0 0 0;
 `
 export const ReservationAll = styled.div` 
-  height: 411.33px;
+  height: 404.14px;
   width: 60%;
   margin: 0 auto;
   padding: 80px 0 0 0;
@@ -960,12 +976,9 @@ export const MainMenuActive = styled.div`
   width: 150px;
   padding:0px 20px;
   line-height: 80px;
-  
-  &:active {
-    color: #fff;
-  }
 `
 export const HeaderLink = styled(NavLink)`
   text-decoration: none;
-  color: #000;
+  
 `
+

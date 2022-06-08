@@ -1,18 +1,30 @@
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
-import { All, HeaderFixed, ReservationAll, ReservationBetween, ReservationCustomBtn, ReservationHeader, ReservationLogo, ReservationLogoSize, ReservationNmember, ReservationTitle } from '@layout/index.style'
+import { 
+  All, 
+  HeaderFixed, 
+  ReservationAll,
+  ReservationBetween, 
+  ReservationCustomBtn, 
+  ReservationHeader, 
+  ReservationHeader2,
+  ReservationLogo, 
+  ReservationLogoSize, 
+  ReservationNmember, 
+  ReservationTitle 
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import ReservationImg from '../../img/reservation.png'
 
 interface IProps {
-
 }
-
+ 
 const Reservation: React.FC<IProps> = (props: IProps) => {
   useOnMount(() => { window.scrollTo({top:0, behavior:'smooth'}) })
   useOnUnmount(() => {})
-  return (
+  
+  return ( 
     <Fragment>
       <HeaderFixed>
         <ReservationHeader>

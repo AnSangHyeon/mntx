@@ -1,6 +1,24 @@
 import React, { Fragment, useState } from 'react'
 import { useOnMount, useOnUnmount } from '@utils/hook'
-import { BodyModal, FooterAll, FooterBtn, FooterBtn2, FooterBtn3, FooterBtnAll, FooterInfo, FooterLogo, FooterMainTxt, FooterModal, FooterModalAll, FooterModalTitle, FooterModalTxt, FooterSubTitle, FooterTitle, ModalFooter, Top30pxPadding } from './index.style'
+import { 
+  BodyModal, 
+  FooterAll, 
+  FooterBtn, 
+  FooterBtn2, 
+  FooterBtn3, 
+  FooterBtnAll, 
+  FooterInfo, 
+  FooterLogo, 
+  FooterMainTxt, 
+  FooterModal, 
+  FooterModalAll, 
+  FooterModalTitle, 
+  FooterModalTxt, 
+  FooterSubTitle, 
+  FooterTitle,
+  ModalFooter, 
+  Top30pxPadding 
+} from './index.style'
 import FooterImg from '../../src/img/footerlogo.png'
 import { Button, Col, Modal, Row } from 'react-bootstrap'
 

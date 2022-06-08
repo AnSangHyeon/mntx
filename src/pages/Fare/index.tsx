@@ -1,6 +1,40 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Header from '@layout/Header'
-import { All, FareAll, FareCheckAll, FareCheckbox, FareCheckFlex, FareCntNum, FareCol1, FareCol2, FareCol3, FareCol4, FareCol4F, FareColTxt, FareColTxt2, FareContainer1, FareContainer2, FareContainerAll, FareCustomBtn, FareLeftIcon, FareMarginTop, FarePlusMinus, FarePlusMinusAll, FareRow1, FareRow2, FareRow4, FareRow5, FareSaveBtn, FareSaveContainer, FareSaveLeft, FareSaveRight, FareSaveRow, FareSpaceCol, FontColorBlack, HeaderFixed, LinkLineNone } from '@layout/index.style'
+import { 
+  All, 
+  FareAll, 
+  FareCheckAll, 
+  FareCheckbox, 
+  FareCheckFlex, 
+  FareCntNum, 
+  FareCol1, 
+  FareCol2, 
+  FareCol3, 
+  FareCol4, 
+  FareCol4F, 
+  FareColTxt, 
+  FareColTxt2, 
+  FareContainer1, 
+  FareContainer2, 
+  FareContainerAll, 
+  FareCustomBtn,  
+  FareMarginTop, 
+  FarePlusMinus,
+  FarePlusMinusAll, 
+  FareRow1, 
+  FareRow2, 
+  FareRow4, 
+  FareRow5, 
+  FareSaveBtn, 
+  FareSaveContainer, 
+  FareSaveLeft, 
+  FareSaveRight, 
+  FareSaveRow, 
+  FareSpaceCol, 
+  FontColorBlack, 
+  HeaderFixed, 
+  LinkLineNone 
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment, useState } from 'react'
 import { Button, Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootstrap'
