@@ -2,12 +2,9 @@ import Footer from '@layout/Footer'
 import Header from '@layout/Header'
 import { 
   All, 
-  HeaderFixed, 
   ReservationAll,
   ReservationBetween, 
   ReservationCustomBtn, 
-  ReservationHeader, 
-  ReservationHeader2,
   ReservationLogo, 
   ReservationLogoSize, 
   ReservationNmember, 
@@ -26,11 +23,6 @@ const Reservation: React.FC<IProps> = (props: IProps) => {
   
   return ( 
     <Fragment>
-      <HeaderFixed>
-        <ReservationHeader>
-          <Header />
-        </ReservationHeader>
-      </HeaderFixed>
       
       <All></All>
         <ReservationAll>

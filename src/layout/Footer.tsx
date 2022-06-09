@@ -41,7 +41,7 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
   return (
     <Fragment>
       <FooterModalAll>
-        <Modal show={left} onHide={handleCloset}>
+        <Modal show={left} onHide={ handleCloset }>
           <Modal.Header closeButton>
             <FooterModalTitle>이용약관</FooterModalTitle>
           </Modal.Header>

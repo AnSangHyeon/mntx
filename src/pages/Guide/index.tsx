@@ -8,7 +8,6 @@ import {
   GuideSection1Title,
   GuideSectionAll,
   GuideStep1,
-  HeaderFixed,
   ServicePoint1SubTitle,
   ServicePoint1Title,
   ServicePoint1Txt,
@@ -36,9 +35,7 @@ const Guide: React.FC<IProps> = (props: IProps) => {
   return (
     
     <Fragment>
-      <HeaderFixed>
-        <Header></Header>
-      </HeaderFixed>
+      
 
       <GuideSectionAll>
         <GuideSection1>

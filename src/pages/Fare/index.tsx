@@ -32,7 +32,6 @@ import {
   FareSaveRow, 
   FareSpaceCol, 
   FontColorBlack, 
-  HeaderFixed, 
   LinkLineNone 
 } from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
@@ -41,8 +40,9 @@ import { Button, Col, Container, Form, FormControl, InputGroup, Row } from 'reac
 import { faChevronLeft, faPlus, faMinus } from "@fortawesome/free-solid-svg-icons"
 import { faCheckSquare, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { faSquare } from '@fortawesome/free-regular-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Footer from '@layout/Footer'
+import {  } from 'react-router-dom'
 
 
 
@@ -60,23 +60,19 @@ const Fare: React.FC<IProps> = (props: IProps) => {
   const MinusBtn = () => {
     setCnt(cnt-1)
   }
+  const navigate = useNavigate()
   return (
-    <Fragment>
-      <HeaderFixed>
-        <Header></Header>
-      </HeaderFixed>      
+    <Fragment>  
       <All></All>
       <FareAll>
         <FareContainerAll>
           <FareContainer1>
             <FareRow1>
               <FareCol1>
-                <LinkLineNone to='/Reservation'>
-                  <FontColorBlack>
-                    <FontAwesomeIcon icon={ faChevronLeft } />&nbsp;
-                    돌아가기
-                  </FontColorBlack>
-                </LinkLineNone>
+                <FontColorBlack onClick={() => navigate(-1)}>
+                  <FontAwesomeIcon icon={ faChevronLeft } />&nbsp;
+                  돌아가기
+                </FontColorBlack>
               </FareCol1>
             </FareRow1>
           </FareContainer1>

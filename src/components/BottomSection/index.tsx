@@ -1,6 +1,17 @@
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
-import { HeaderFixed, HomeSection525px, HomeSection55px, HomeSection5All, HomeSection5Col, HomeSection5CustomBtn, HomeSection5Img, HomeSection5Row, HomeSection5SubTitle, HomeSection5Title, LinkLineNone } from '@layout/index.style'
+import { 
+  HomeSection525px, 
+  HomeSection55px, 
+  HomeSection5All, 
+  HomeSection5Col, 
+  HomeSection5CustomBtn, 
+  HomeSection5Img, 
+  HomeSection5Row, 
+  HomeSection5SubTitle, 
+  HomeSection5Title, 
+  LinkLineNone 
+} from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment } from 'react'
 import Section3Contents5Img from '../../img/HomeSection5Img.png'

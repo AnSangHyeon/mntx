@@ -2,7 +2,6 @@ import BottomSection from '@components/BottomSection'
 import Footer from '@layout/Footer'
 import Header from '@layout/Header'
 import { 
-  HeaderFixed, 
   ServicePoint1, 
   ServicePoint1Logo, 
   ServicePoint1Row, 
@@ -43,6 +42,7 @@ import ServicePoint1Img from '../../img/servicepoint1.png'
 import ServicePoint2Img from '../../img/servicepoint2.png'
 import ServicePoint3Img from '../../img/servicepoint3.png'
 import ServicePoint4Img from '../../img/servicepoint4.png'
+import { Link } from 'react-router-dom'
 
 interface IProps {
 
@@ -53,9 +53,7 @@ const Service: React.FC<IProps> = (props: IProps) => {
   useOnUnmount(() => {})
   return (
     <Fragment>
-      <HeaderFixed>
-        <Header></Header>
-      </HeaderFixed>
+      
 
       <ServiceSection1All>
         <ServiceSection1>
@@ -81,7 +79,9 @@ const Service: React.FC<IProps> = (props: IProps) => {
             <ServicePoint1SubTitle>정확하게 이용한 만큼만 지불하세요</ServicePoint1SubTitle>
             <ServicePoint1Txt>결제 후 5분 안에 받아보는 상세 내역!</ServicePoint1Txt>
             <ServicePoint1Txt>합리적인 요금과 투명한 요금 정책으로 새로운 펫택시를 경험하세요</ServicePoint1Txt>
-            <ServicePoint1SubTxt>예상 요금 계산하러 가기</ServicePoint1SubTxt>
+            <Link to='/Fare'>
+              <ServicePoint1SubTxt>예상 요금 계산하러 가기</ServicePoint1SubTxt>
+            </Link>
             <ServicePoint1Logo src={ ServicePoint1Img }></ServicePoint1Logo>
           </Col>
         </ServicePoint1Row>

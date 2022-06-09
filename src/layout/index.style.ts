@@ -14,23 +14,11 @@ import { NavLink } from "react-router-dom"
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-
-export const CustomWrapper = styled.header`
+export const CustomWrapper = styled.div`
   width: 100%;
   height: 80px;
-  
-`
-export const HeaderFixed = styled.div` 
-  width: 100%;
+  z-index: 3;
   position: fixed;
-  z-index: 1;
-  background: #fff;
-  height: 80px;
-  
-`
-export const HeaderLeft = styled.div`
-  float:left;
-  height: 80px;
 `
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
@@ -38,35 +26,28 @@ export const ReservationHeader = styled.div`
   height: 80px;
 
 `
-
-export const ReservationHeader2 = styled.div` 
-  background: #fff;
-  width: 100%;
-  height: 80px;
-
-`
 export const LinkLineNone = styled(NavLink)`
   text-decoration: none;
 `
-export const HeaderRight = styled.div`
-  float:right;
-`
-export const HeaderIogo = styled.div`
+export const HeaderLogo = styled.div`
   padding:14px 10px;
   width:128px;
   height: 79px;
-  display:inline-block;
-  
+  float: left;
+`
+export const HeaderRight = styled.div` 
+  float: right;
 `
 export const MainMenu = styled.div`
-  position: relative;
-  top: 0;
   font-size:1.3rem;
   font-weight: 600;
   display: inline-block;
   width: 150px;
   padding:0px 20px;
   line-height: 80px;
+`
+export const HeaderLeft = styled.div` 
+  float: left;
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
@@ -956,7 +937,7 @@ export const HeaderUnderLineLog = styled.div`
   }
 `
 export const HeaderUnderLineSign = styled.div` 
-  width: 97.42px;
+  width: 116.55px;
   height: 80px;
   text-decoration: none;
   
@@ -981,4 +962,5 @@ export const HeaderLink = styled(NavLink)`
   text-decoration: none;
   
 `
+
 

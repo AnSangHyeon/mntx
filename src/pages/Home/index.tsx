@@ -17,8 +17,7 @@ import {
   AccordionTxt, 
   AccordionTxtLeft, 
   CustomBtn, 
-  CustomBtnPosition, 
-  HeaderFixed, 
+  CustomBtnPosition,  
   All, 
   HomeContents, 
   HomeContentsBottomMargin, 
@@ -102,9 +101,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
   return (
     
     <Fragment>
-      <HeaderFixed>
-        <Header></Header>
-      </HeaderFixed>
+      
       <All></All>
       <HomeSection1>
         <HomeLogo>

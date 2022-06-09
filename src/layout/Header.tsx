@@ -4,85 +4,99 @@ import { Link, useLocation } from 'react-router-dom'
 import HeaderImg from "../img/header.png"
 import { 
   CustomWrapper, 
-  HeaderIogo, 
-  HeaderLeft, 
+  HeaderLogo,  
   HeaderLink, 
   HeaderLogin, 
-  HeaderRight,
   HeaderSign, 
   HeaderUnderLineLog, 
   HeaderUnderLineMenu, 
   HeaderUnderLineSign, 
   MainMenu, 
-  MainMenuActive 
+  MainMenuActive,
+  HeaderRight,
+  HeaderLeft,
 } from './index.style'
 
 interface IHeaderProps {}
 
 const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
-  
+
+  // const [isListHover, setIsListHover] = useState(false)
+  // const onMouseOver = () => setIsListHover(true)
+  // const onMouseOut = () => setIsListHover(false)
+
+
   const location = useLocation()
-  
-  const st = {color: location.pathname.indexOf('Reservation') >= 0 ? '#fff' : '#000'}
+  const HeaderColor = {
+    color: location.pathname.indexOf('Reservation') >= 0 ? '#fff' : '#000'
+  }
+  const HeaderPosi = {
+    position: location.pathname.indexOf('Recruitment') >= 0 ? 'absolute' : 'fixed'
+  }
+  const HeaderBackground = {
+    background: location.pathname.indexOf('Reservation') >= 0 ? '#2a4a9e' : '#fff'
+  }
+
+
   useOnMount(() => {})
   useOnUnmount(() => {})
-  
-  
 
   return ( 
     <Fragment>
-      <CustomWrapper>
+      <CustomWrapper style={ HeaderBackground }>
+        <HeaderLink to="/">
+          <HeaderLogo>
+            <img src={ HeaderImg } alt="이미지" />
+          </HeaderLogo>
+        </HeaderLink>
+
         <HeaderLeft>
-          <HeaderLink to="/">
-            <HeaderIogo>
-              <img src={ HeaderImg } alt="이미지" />
-            </HeaderIogo>
-          </HeaderLink>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/" style={st}>
+            <HeaderLink to="/" style={ HeaderColor }>
               <MainMenu>홈</MainMenu>  
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Service" style={st}>
+            <HeaderLink to="/Service" style={ HeaderColor }>
               <MainMenu>서비스</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Guide" style={st}>
+            <HeaderLink to="/Guide" style={ HeaderColor }>
               <MainMenu>이용가이드</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Reservation" style={st}>
+            <HeaderLink to="/Reservation" style={ HeaderColor }>
               <MainMenuActive>예약하기</MainMenuActive> 
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Fare" style={st}>
+            <HeaderLink to="/Fare" style={ HeaderColor }>
               <MainMenu>예상요금</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Recruitment" style={st}>
+            <HeaderLink to="/Recruitment" style={ HeaderColor }>
               <MainMenu>인재 모집</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
         </HeaderLeft>
+        
         <HeaderRight>
           <HeaderUnderLineLog>
-            <HeaderLink to="/Login" style={st}>
+            <HeaderLink to="/Login" style={ HeaderColor }>
               <HeaderLogin>로그인</HeaderLogin>
             </HeaderLink>
           </HeaderUnderLineLog>
           <HeaderUnderLineSign>
-            <HeaderLink to="/Sign" style={st}>
+            <HeaderLink to="/Sign" style={ HeaderColor }>
               <HeaderSign>회원가입</HeaderSign>
             </HeaderLink>
           </HeaderUnderLineSign>
         </HeaderRight>
         
-        
+       
       </CustomWrapper>
     </Fragment>
   )

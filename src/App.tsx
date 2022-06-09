@@ -34,8 +34,11 @@ const Home = loadComponent(() => import(/* webpackChunkName: "Home" */ '@pages/H
 const Login = loadComponent(() => import(/* webpackChunkName: "Home" */ '@pages/Login'))
 
 const App: React.FC<IAppProps> = (props: IAppProps) => {
+
   return (
     <div className="App">
+      
+      <Header/>
       
       <Routes>
         <Route path='/' element={<Home />} />
