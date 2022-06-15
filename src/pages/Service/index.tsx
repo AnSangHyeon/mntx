@@ -145,7 +145,7 @@ const Service: React.FC<IProps> = (props: IProps) => {
       
 
       <BottomSection></BottomSection>
-      <Footer></Footer>
+  
     </Fragment>
   )
 }

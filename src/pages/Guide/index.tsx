@@ -76,7 +76,6 @@ const Guide: React.FC<IProps> = (props: IProps) => {
       </GuideStep4>
 
       <BottomSection></BottomSection>
-      <Footer></Footer>
     </Fragment>
   )
 }

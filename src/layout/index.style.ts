@@ -18,7 +18,8 @@ export const CustomWrapper = styled.div`
   width: 100%;
   height: 80px;
   z-index: 3;
-  position: fixed;
+  
+  
 `
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
@@ -41,13 +42,14 @@ export const HeaderRight = styled.div`
 export const MainMenu = styled.div`
   font-size:1.3rem;
   font-weight: 600;
-  display: inline-block;
+  height: 80px;
   width: 150px;
   padding:0px 20px;
   line-height: 80px;
 `
 export const HeaderLeft = styled.div` 
   float: left;
+  height: 80px;
 `
 export const HeaderLogin = styled.div`
   font-size:1.3rem;
@@ -960,7 +962,6 @@ export const MainMenuActive = styled.div`
 `
 export const HeaderLink = styled(NavLink)`
   text-decoration: none;
-  
 `
 
 

@@ -1,5 +1,6 @@
 import Header from '@layout/Header'
 import { 
+  All,
   LinkLineNone, 
   RecruitmentFixed, 
   RecruitmentImg 
@@ -24,8 +25,8 @@ const Recruitment: React.FC<IProps> = (props: IProps) => {
   
   return (
     <Fragment>
-      
-      <a href='https://docs.google.com/forms/d/e/1FAIpQLSfxlRyEtfMcXCFuE6H4TQeBZ0-A5Dl1PTSkmITPHOQcHHjGDg/viewform'>
+      <All></All>
+      <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfxlRyEtfMcXCFuE6H4TQeBZ0-A5Dl1PTSkmITPHOQcHHjGDg/viewform'>
         <RecruitmentFixed src={ RecruitmentFixedImg } alt="멍타냥택시 드라이버 지원하기" />
       </a>
       

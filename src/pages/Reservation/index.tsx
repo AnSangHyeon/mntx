@@ -39,9 +39,6 @@ const Reservation: React.FC<IProps> = (props: IProps) => {
           
         </ReservationAll>
       
-      
-      <Footer></Footer>
-      
     </Fragment>
   )
 }

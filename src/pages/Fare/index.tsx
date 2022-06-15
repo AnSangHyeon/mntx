@@ -171,10 +171,6 @@ const Fare: React.FC<IProps> = (props: IProps) => {
         
       </FareAll>
         
-      
-
-      
-      <Footer></Footer>
     </Fragment>
   )
 }

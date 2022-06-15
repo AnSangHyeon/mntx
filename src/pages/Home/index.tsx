@@ -305,7 +305,7 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
       </HomeSection4All>
       
       <BottomSection></BottomSection>
-      <Footer></Footer>
+      
     </Fragment>
     
   )

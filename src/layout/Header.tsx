@@ -16,34 +16,33 @@ import {
   HeaderRight,
   HeaderLeft,
 } from './index.style'
+import styled from 'styled-components'
 
-interface IHeaderProps {}
+interface IHeaderProps {
+
+}
 
 const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
 
-  // const [isListHover, setIsListHover] = useState(false)
-  // const onMouseOver = () => setIsListHover(true)
-  // const onMouseOut = () => setIsListHover(false)
-
 
   const location = useLocation()
-  const HeaderColor = {
-    color: location.pathname.indexOf('Reservation') >= 0 ? '#fff' : '#000'
-  }
-  const HeaderPosi = {
-    position: location.pathname.indexOf('Recruitment') >= 0 ? 'absolute' : 'fixed'
-  }
-  const HeaderBackground = {
-    background: location.pathname.indexOf('Reservation') >= 0 ? '#2a4a9e' : '#fff'
-  }
+  const HeaderColor = location.pathname.indexOf('Reservation') >= 0 ? '#fff' : '#000'
+  const HeaderPosition = location.pathname.indexOf('Recruitment') >= 0 ? 'absolute' : 'fixed'
+  const HeaderBackground = location.pathname.indexOf('Reservation') >= 0 ? '#2a4a9e' : '#fff'
 
+  function MouseOver(e) {
+    e.target.style.color = location.pathname.indexOf('Reservation') >= 0 ? '' : '#2a4a9e'  
+  }
+  function MouseOut(e){
+    e.target.style.color = location.pathname.indexOf('Reservation') >= 0 ? '' : ''  
+  }
 
   useOnMount(() => {})
   useOnUnmount(() => {})
 
   return ( 
     <Fragment>
-      <CustomWrapper style={ HeaderBackground }>
+      <CustomWrapper style={{position: HeaderPosition, background: HeaderBackground}}>
         <HeaderLink to="/">
           <HeaderLogo>
             <img src={ HeaderImg } alt="이미지" />
@@ -52,32 +51,32 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
 
         <HeaderLeft>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/" style={ HeaderColor }>
+            <HeaderLink to="/" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>홈</MainMenu>  
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Service" style={ HeaderColor }>
+            <HeaderLink to="/Service" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>서비스</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Guide" style={ HeaderColor }>
+            <HeaderLink to="/Guide" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>이용가이드</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Reservation" style={ HeaderColor }>
+            <HeaderLink to="/Reservation" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenuActive>예약하기</MainMenuActive> 
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Fare" style={ HeaderColor }>
+            <HeaderLink to="/Fare" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>예상요금</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
           <HeaderUnderLineMenu>
-            <HeaderLink to="/Recruitment" style={ HeaderColor }>
+            <HeaderLink to="/Recruitment" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>인재 모집</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
@@ -85,12 +84,12 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
         
         <HeaderRight>
           <HeaderUnderLineLog>
-            <HeaderLink to="/Login" style={ HeaderColor }>
+            <HeaderLink to="/Login" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <HeaderLogin>로그인</HeaderLogin>
             </HeaderLink>
           </HeaderUnderLineLog>
           <HeaderUnderLineSign>
-            <HeaderLink to="/Sign" style={ HeaderColor }>
+            <HeaderLink to="/Sign" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <HeaderSign>회원가입</HeaderSign>
             </HeaderLink>
           </HeaderUnderLineSign>

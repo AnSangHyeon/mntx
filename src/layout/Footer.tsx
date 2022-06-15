@@ -311,7 +311,10 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
             <Col md={6}>
               <FooterTitle>반려동물과 이동이 필요하신가요?</FooterTitle>
               <FooterSubTitle>아래로 문의주시면 친절히 답변해드리겠습니다.</FooterSubTitle>
-              <FooterBtn3>실시간 문의</FooterBtn3>
+              <a href="https://accounts.kakao.com/login?continue=http%3A%2F%2Fpf.kakao.com%2F_HuZSs%2Fchat">
+                <FooterBtn3>실시간 문의</FooterBtn3>
+              </a>
+                
             </Col>
           </Row>
           
