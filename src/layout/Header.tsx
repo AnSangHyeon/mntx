@@ -9,12 +9,13 @@ import {
   HeaderLogin, 
   HeaderSign, 
   HeaderUnderLineLog, 
-  HeaderUnderLineMenu, 
+  HeaderUnderLineMenu,
   HeaderUnderLineSign, 
   MainMenu, 
   MainMenuActive,
   HeaderRight,
   HeaderLeft,
+  HeaderHeightAll,
 } from './index.style'
 import styled from 'styled-components'
 
@@ -29,6 +30,7 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
   const HeaderColor = location.pathname.indexOf('Reservation') >= 0 ? '#fff' : '#000'
   const HeaderPosition = location.pathname.indexOf('Recruitment') >= 0 ? 'absolute' : 'fixed'
   const HeaderBackground = location.pathname.indexOf('Reservation') >= 0 ? '#2a4a9e' : '#fff'
+  const HeaderHeight = location.pathname.indexOf('Reservation') >= 0 ? '' : 'none'
 
   function MouseOver(e) {
     e.target.style.color = location.pathname.indexOf('Reservation') >= 0 ? '' : '#2a4a9e'  
@@ -94,9 +96,8 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
             </HeaderLink>
           </HeaderUnderLineSign>
         </HeaderRight>
-        
-       
       </CustomWrapper>
+      <HeaderHeightAll style={{display: HeaderHeight}}></HeaderHeightAll>
     </Fragment>
   )
 }

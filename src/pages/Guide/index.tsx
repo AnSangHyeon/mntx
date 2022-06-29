@@ -33,10 +33,7 @@ const Guide: React.FC<IProps> = (props: IProps) => {
   useOnUnmount(() => {})
   
   return (
-    
     <Fragment>
-      
-
       <GuideSectionAll>
         <GuideSection1>
           <GuideSection1Title>멍타냥택시</GuideSection1Title>

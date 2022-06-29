@@ -7,6 +7,7 @@ import {
   FooterBtn2, 
   FooterBtn3, 
   FooterBtnAll, 
+  FooterHeightAll, 
   FooterInfo, 
   FooterLogo, 
   FooterMainTxt, 
@@ -21,12 +22,18 @@ import {
 } from './index.style'
 import FooterImg from '../../src/img/footerlogo.png'
 import { Button, Col, Modal, Row } from 'react-bootstrap'
+import { useLocation } from 'react-router-dom'
 
 interface IFooterProps {
-
+  
 }
 
 const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
+  const location = useLocation()
+  const footerdisplay = {
+    display:location.pathname.indexOf('Recruitment') >= 0 ? 'none' : ''
+  }
+
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -34,7 +41,8 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
   const [left, setLeft] = useState(false)
   const handleCloset = () => setLeft(false)
   const handleShowt = () => setLeft(true)
-
+ 
+  const HeaderFooterHeight = location.pathname.indexOf('Reservation') >= 0 ? '' : 'none'
 
   useOnMount(() => {})
   useOnUnmount(() => {})
@@ -289,7 +297,7 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
         </Modal>
       </FooterModalAll>
       
-      <FooterAll>
+      <FooterAll style={footerdisplay}>
         <FooterInfo>
           <FooterLogo src={ FooterImg } alt="" />
           <Row>
@@ -317,9 +325,9 @@ const Footer: React.FC<IFooterProps> = (props: IFooterProps) => {
                 
             </Col>
           </Row>
-          
         </FooterInfo>
       </FooterAll>
+      <FooterHeightAll style={{display: HeaderFooterHeight}}></FooterHeightAll>
     </Fragment>
   )
 }

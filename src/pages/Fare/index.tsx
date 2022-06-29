@@ -32,7 +32,8 @@ import {
   FareSaveRow, 
   FareSpaceCol, 
   FontColorBlack, 
-  LinkLineNone 
+  LinkLineNone, 
+  TestDiv
 } from '@layout/index.style'
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment, useState } from 'react'
@@ -65,96 +66,96 @@ const Fare: React.FC<IProps> = (props: IProps) => {
     <Fragment>  
       <All></All>
       <FareAll>
-        <FareContainerAll>
-          <FareContainer1>
-            <FareRow1>
-              <FareCol1>
-                <FontColorBlack onClick={() => navigate(-1)}>
-                  <FontAwesomeIcon icon={ faChevronLeft } />&nbsp;
-                  돌아가기
-                </FontColorBlack>
-              </FareCol1>
-            </FareRow1>
-          </FareContainer1>
-          <FareContainer2>
-            <FareRow2>
-              <FareCol2 md={12}>예상 요금 계산하기</FareCol2>
-              <FareCol3>
-              <FareColTxt>주행 시간</FareColTxt>
+        <FareContainer1>
+          <FareRow1>
+            <FareCol1>
+              <FontColorBlack onClick={() => navigate(-1)}>
+                <FontAwesomeIcon icon={ faChevronLeft } />&nbsp;
+                돌아가기
+              </FontColorBlack>
+            </FareCol1>
+          </FareRow1>
+        </FareContainer1>
+        <FareContainer2>
+          <FareRow2>
+            <FareCol2 md={12}>예상 요금 계산하기</FareCol2>
+            <FareCol3>
+            <FareColTxt>주행 시간</FareColTxt>
+            <InputGroup>
+              <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
+              <InputGroup.Text>분</InputGroup.Text>
+            </InputGroup>
+            </FareCol3>
+            <FareCol3>
+              <FareColTxt>주행 거리</FareColTxt>
+              <InputGroup>
+                <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
+                <InputGroup.Text>km</InputGroup.Text>
+              </InputGroup>
+            </FareCol3>
+          </FareRow2>
+
+          <FareMarginTop></FareMarginTop>
+
+          <FareRow4>
+            <FareCol4F md={6}>
+              <FarePlusMinusAll>
+                <FareColTxt2>반려동물 수</FareColTxt2>
+                <FarePlusMinus>
+                  <FareCustomBtn onClick={ MinusBtn } variant="outline-primary">
+                    <FontAwesomeIcon icon={ faMinus } />
+                  </FareCustomBtn>{' '}
+                  &nbsp;<FareCntNum>{ cnt }</FareCntNum>&nbsp;
+                  <FareCustomBtn onClick={ PlusBtn } variant="outline-primary">
+                    <FontAwesomeIcon icon={ faPlus } />
+                  </FareCustomBtn>{' '} &nbsp;
+                  <FareColTxt>마리</FareColTxt>
+                </FarePlusMinus>
+              </FarePlusMinusAll>
+            </FareCol4F>
+            <FareCol4 md={6}>
+              <FareCheckFlex>
+                <FareCheckAll>
+                  <FareCheckbox aria-label="option 1" />
+                  심야 할증 (오전 7~9시 / 오후 9시 ~11시)
+                </FareCheckAll>
+                <FareCheckAll>
+                  <FareCheckbox aria-label="option 1" />
+                  단독 탑승
+                </FareCheckAll>
+              </FareCheckFlex>
+            </FareCol4>
+          </FareRow4>
+
+          <FareMarginTop></FareMarginTop>
+
+          <FareRow5>
+            <FareCol3 md={6}>
+              <FareColTxt>통행료</FareColTxt>
+              <InputGroup>
+                <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
+                <InputGroup.Text>원</InputGroup.Text>
+              </InputGroup>
+            </FareCol3>
+            <FareCol3 md={6}>
+              <FareColTxt>왕복/경유시 대기 시간</FareColTxt>
               <InputGroup>
                 <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
                 <InputGroup.Text>분</InputGroup.Text>
               </InputGroup>
-              </FareCol3>
-              <FareCol3>
-                <FareColTxt>주행 거리</FareColTxt>
-                <InputGroup>
-                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
-                  <InputGroup.Text>km</InputGroup.Text>
-                </InputGroup>
-              </FareCol3>
-            </FareRow2>
+            </FareCol3>
 
             <FareMarginTop></FareMarginTop>
 
-            <FareRow4>
-              <FareCol4F md={6}>
-                <FarePlusMinusAll>
-                  <FareColTxt2>반려동물 수</FareColTxt2>
-                  <FarePlusMinus>
-                    <FareCustomBtn onClick={ MinusBtn } variant="outline-primary">
-                      <FontAwesomeIcon icon={ faMinus } />
-                    </FareCustomBtn>{' '}
-                    &nbsp;<FareCntNum>{ cnt }</FareCntNum>&nbsp;
-                    <FareCustomBtn onClick={ PlusBtn } variant="outline-primary">
-                      <FontAwesomeIcon icon={ faPlus } />
-                    </FareCustomBtn>{' '} &nbsp;
-                    <FareColTxt>마리</FareColTxt>
-                  </FarePlusMinus>
-                </FarePlusMinusAll>
-              </FareCol4F>
-              <FareCol4 md={6}>
-                <FareCheckFlex>
-                  <FareCheckAll>
-                    <FareCheckbox aria-label="option 1" />
-                    심야 할증 (오전 7~9시 / 오후 9시 ~11시)
-                  </FareCheckAll>
-                  <FareCheckAll>
-                    <FareCheckbox aria-label="option 1" />
-                    단독 탑승
-                  </FareCheckAll>
-                </FareCheckFlex>
-              </FareCol4>
-            </FareRow4>
+            <FareSpaceCol md={6}></FareSpaceCol>
+            <FareSpaceCol md={6}></FareSpaceCol>
 
             <FareMarginTop></FareMarginTop>
 
-            <FareRow5>
-              <FareCol3 md={6}>
-                <FareColTxt>통행료</FareColTxt>
-                <InputGroup>
-                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
-                  <InputGroup.Text>원</InputGroup.Text>
-                </InputGroup>
-              </FareCol3>
-              <FareCol3 md={6}>
-                <FareColTxt>왕복/경유시 대기 시간</FareColTxt>
-                <InputGroup>
-                  <FormControl type='number' defaultValue={0} aria-label="Dollar amount (with dot and two decimal places)" />
-                  <InputGroup.Text>분</InputGroup.Text>
-                </InputGroup>
-              </FareCol3>
-
-              <FareMarginTop></FareMarginTop>
-
-              <FareSpaceCol md={6}></FareSpaceCol>
-              <FareSpaceCol md={6}></FareSpaceCol>
-
-              <FareMarginTop></FareMarginTop>
-
-              <FareSaveBtn>계산하기</FareSaveBtn>
-            </FareRow5>
-          </FareContainer2>
+            <FareSaveBtn>계산하기</FareSaveBtn>
+          </FareRow5>
+        </FareContainer2>
+        <TestDiv>
           <FareSaveContainer>
             <FareSaveRow>
               <FareSaveLeft md={5}>
@@ -165,10 +166,7 @@ const Fare: React.FC<IProps> = (props: IProps) => {
               </FareSaveRight>
             </FareSaveRow>
           </FareSaveContainer>
-
-        </FareContainerAll>
-        
-        
+        </TestDiv>
       </FareAll>
         
     </Fragment>

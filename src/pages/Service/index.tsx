@@ -53,8 +53,6 @@ const Service: React.FC<IProps> = (props: IProps) => {
   useOnUnmount(() => {})
   return (
     <Fragment>
-      
-
       <ServiceSection1All>
         <ServiceSection1>
           <ServiceRow>

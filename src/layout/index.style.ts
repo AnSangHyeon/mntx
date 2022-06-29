@@ -15,11 +15,9 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const CustomWrapper = styled.div`
-  width: 100%;
-  height: 80px;
-  z-index: 3;
-  
-  
+  width: 1920px;
+  max-width: 1920px;
+  z-index: 1000;
 `
 export const ReservationHeader = styled.div` 
   background: #2a4a9e;
@@ -46,6 +44,11 @@ export const MainMenu = styled.div`
   width: 150px;
   padding:0px 20px;
   line-height: 80px;
+`
+export const HeaderHeightAll = styled.div` 
+  height: 102.95px;
+  max-width: 1920px;
+  background: #2a4a9e;
 `
 export const HeaderLeft = styled.div` 
   float: left;
@@ -78,7 +81,8 @@ export const All = styled.div`
 export const HomeSection1 = styled.div`
   background: #feefd4;  
   padding: 95px 0px 105px 0px;
-  
+  width: 100%;
+  max-width: 1920px;
 `
 export const HomeLogo = styled.div`
   
@@ -110,6 +114,8 @@ export const CustomBtnPosition = styled.div`
 export const HomeSection2All = styled.div`
   background: #2a4a9e;
   padding: 135px 0px 115px 0px;
+  width: 100%;
+  max-width: 1920px;
 `
 export const HomeSection2 = styled.div`
   width: 1490.78px;
@@ -139,6 +145,8 @@ export const Section2ContentsImg = styled.div`
 `
 export const HomeSection3All = styled.div`
   height: 1482px;
+  width: 100%;
+  max-width: 1920px;
 `
 export const HomeSection3 = styled.div`
   height: 1212px;
@@ -210,6 +218,8 @@ export const HomeSection3Img4 = styled.img`
 export const HomeSection4All = styled.div`
   height: 820.58px;
   background: #eef1f7;
+  width: 100%;
+  max-width: 1920px;
 `
 export const HomeSection4 = styled.div`
   height: 590.58px;
@@ -348,6 +358,8 @@ export const HomeSection5All = styled.div`
   height: 547.97px;
   background: #eaeae8;
   padding: 80px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const HomeSection5Col = styled(Col)`
   width: 50%;
@@ -397,6 +409,8 @@ export const FooterAll = styled.div`
   font-size: 1rem;
   background: #222837;
   color: #afb3bd;
+  width: 100%;
+  max-width: 1920px;
 `
 export const FooterInfo = styled.div`
   padding: 60px 183.5px;
@@ -454,6 +468,7 @@ export const FooterBtn3 = styled.div`
 `
 export const RecruitmentImg = styled.img` 
   width: 100%;
+
 `
 export const RecruitmentFixed = styled.img` 
   position: fixed;
@@ -469,6 +484,8 @@ export const ServiceSection1 = styled.div`
 `
 export const ServiceSection1All = styled.div` 
   padding: 80px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const ServiceRow = styled(Row)` 
   width: 1536px;
@@ -499,6 +516,8 @@ export const ServiceSection1Txt = styled.div`
 export const ServicePoint1 = styled.div`
   height: 807.22px;
   padding: 100px 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const ServicePoint1Row = styled(Row)` 
   width: 1200px;
@@ -581,6 +600,8 @@ export const ServicePoint2 = styled.div`
   height: 397px;
   padding: 100px 0;
   background: #eef1f7;
+  width: 100%;
+  max-width: 1920px;
 `
 export const ServicePoint2Row = styled(Row)` 
   width: 1200px;
@@ -595,6 +616,8 @@ export const ServicePoint2Logo = styled.img`
 export const ServicePoint3 = styled.div` 
   height: 544.84px;
   padding: 100px 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const ServicePoint3Row = styled(Row)` 
   width: 1200px;
@@ -614,6 +637,8 @@ export const ServicePoint4 = styled.div`
   height: 484.84px;
   background: #eef1f7;
   padding: 100px 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const ServicePoint4Row = styled(Row)` 
   height: 284.84px;
@@ -633,6 +658,8 @@ export const GuideSection1 = styled.div`
 `
 export const GuideSectionAll = styled.div` 
   padding: 80px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const GuideSection1Title = styled.div` 
   color: #fff;
@@ -650,6 +677,8 @@ export const GuideSection1SubTitle = styled.div`
 export const GuideStep1 = styled.div` 
   height: 670.02px;
   padding: 100px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const GuideStep1Logo = styled.img` 
   margin: 80px 0 0 0;
@@ -658,27 +687,42 @@ export const GuideStep2 = styled.div`
   background: #eef1f7;
   height: 668.63px;
   padding: 100px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const GuideStep3 = styled.div` 
   height: 696.02px;
   padding: 100px 0 0 0;
+  width: 100%;
+  max-width: 1920px;
 `
 export const GuideStep4 = styled.div` 
   height: 512.05px;
   padding: 100px 0 0 0;
   background: #eef1f7;
+  width: 100%;
+  max-width: 1920px;
 `
 export const GuideStep4Logo = styled.img` 
   width: 246px;
   height: 229.64px;
   margin: 56px 0 0 0;
 `
-export const ReservationAll = styled.div` 
+export const ReservationHeight = styled.div` 
+  height: 427.09px;
+`
+export const ReservationSection1 = styled.div` 
   height: 404.14px;
   width: 60%;
-  margin: 0 auto;
-  padding: 80px 0 0 0;
   
+  padding: 80px 0 0 0;
+`
+export const ReservationAll = styled.div` 
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 `
 export const ReservationTitle = styled.div` 
   font-size: 36px;
@@ -699,7 +743,7 @@ export const ReservationLogoSize = styled.div`
   height: 124.58px;
 ` 
 export const ReservationNmember = styled.div` 
-  height: 206.75px;
+  height: 199.56px;
   padding: 30px 0 50px 0;
   border-top: 2px solid #2a4a9e;
   font-size: 1.3rem;
@@ -715,11 +759,21 @@ export const ReservationCustomBtn = styled.div`
   background: rgb(42, 74, 158);
   color: #fff;
   padding: 15px 45px;
-  font-size: 16px;
   border-radius: 25px;
   width: 296.58px;
   height: 54px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+ 
+`
+export const ReservationLogSignBtn = styled(Link)` 
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
 `
 export const FareCustomBtn = styled(Button)` 
   width: 28.58px;
@@ -740,13 +794,15 @@ export const FareLeftIcon = styled(FontAwesomeIcon)`
 `
 export const FareAll = styled.div` 
   height: 781px;
+  max-width: 1920px;
+  width: 100%;
 `
 export const FareContainerAll = styled(Container)` 
   height: 681px;
   width: 100%;
 `
 export const FareContainer1 = styled(Container)` 
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 40px 20px;
   margin: 0 auto;
 `
 export const FareCol1 = styled(Col)` 
@@ -763,13 +819,17 @@ export const FontColorBlack = styled.div`
 `
 export const FareContainer2 = styled(Container)` 
   height: 535px;
-  margin: 30px 0 0 0;
+  margin: 30px 291.5 0 291.5px;
   padding: 20px;
+  width: 768px;
+  maxwidth: 768px;
+  background: #f8f9fa;
 `
 export const FareRow2 = styled(Row)` 
   width: 752px;
   margin: 0 auto;
   height: 169px;
+  background: #f8f9fa;
 `
 export const FareCol2 = styled(Col)` 
   margin: 15px 0 30px 0;
@@ -808,9 +868,13 @@ export const FareRow4 = styled(Row)`
   width: 752px;
   margin: 0 auto;
   height: 78px;
+  background: #f8f9fa;
 `
 export const FareMarginTop = styled.div` 
-  margin: 1rem 0 0 0;
+  height: 1rem;
+  width: 752px;
+  margin: 0 auto;
+  background: #f8f9fa;
 `
 export const FareCheckbox = styled(Form.Check)` 
   padding: 0 8px 0 0;
@@ -843,7 +907,7 @@ export const FareSpaceCol = styled(Col)`
   height: 70px;
 `
 export const FareSaveBtn = styled.div` 
-  width: 100%
+  width: 728px;
   padding: 10px;
   border-radius: 45px;
   background: #f49d2c;
@@ -860,8 +924,8 @@ export const FareSaveRow = styled(Row)`
   padding: 20px;
 `
 export const FareSaveContainer = styled(Container)` 
-  width: 100%;
-  margin: 0 0 50px 0;
+ 
+  margin: 0 291.5 50px 291.5px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -963,5 +1027,18 @@ export const MainMenuActive = styled.div`
 export const HeaderLink = styled(NavLink)`
   text-decoration: none;
 `
-
-
+export const TestDiv = styled.div` 
+  width: 100%;
+  margin: 0 auto;
+  height: 132px;
+`
+export const RecruitmentTest = styled.div` 
+  width: 100%;
+  max-width: 1920px;
+`
+export const FooterHeightAll = styled.div` 
+  height: 22.95px;
+  width: 100%;
+  max-width: 1920px;
+  background: #222837;
+`
