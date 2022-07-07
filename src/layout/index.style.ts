@@ -15,7 +15,7 @@ import { Link } from "react-router-dom"
 import styled from "styled-components"
 
 export const CustomWrapper = styled.div`
-  width: 1920px;
+  width: 100%;
   max-width: 1920px;
   z-index: 1000;
 `
@@ -216,14 +216,15 @@ export const HomeSection3Img4 = styled.img`
   height: 186.7px;
 `
 export const HomeSection4All = styled.div`
-  height: 820.58px;
   background: #eef1f7;
   width: 100%;
   max-width: 1920px;
 `
 export const HomeSection4 = styled.div`
-  height: 590.58px;
-  padding: 115px 0px;
+  margin: 115px 0 115px 0;
+  max-width: 1920px;
+  width: 100%;
+  display: inline-block;
 `
 export const HomeSection4Title = styled.div`
   color: #2a4a9e;
@@ -266,9 +267,6 @@ export const HomeSection4BtnImg = styled.img`
   width: 20px;
   height: 20px;  
 `
-export const HomeSection4BtnRight = styled.div`
-  
-`
 export const AccordionItem = styled(Accordion.Item)`
   width: 900px;
   margin: 0 auto;
@@ -276,9 +274,6 @@ export const AccordionItem = styled(Accordion.Item)`
 export const AccordionHead = styled(Accordion.Header)`
   width: 900px;
   
-`
-export const AccordionAll = styled.div`
-  height: 375.19px;
 `
 export const AccordionTxt = styled.div`
   width: 844.61px;
@@ -765,7 +760,7 @@ export const ReservationCustomBtn = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: center;
- 
+  
 `
 export const ReservationLogSignBtn = styled(Link)` 
   color: #fff;

@@ -42,7 +42,7 @@ import ServicePoint1Img from '../../img/servicepoint1.png'
 import ServicePoint2Img from '../../img/servicepoint2.png'
 import ServicePoint3Img from '../../img/servicepoint3.png'
 import ServicePoint4Img from '../../img/servicepoint4.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 interface IProps {
 
@@ -51,11 +51,13 @@ interface IProps {
 const Service: React.FC<IProps> = (props: IProps) => {
   useOnMount(() => {})
   useOnUnmount(() => {})
+  
+
   return (
     <Fragment>
       <ServiceSection1All>
         <ServiceSection1>
-          <ServiceRow>
+          <ServiceRow> 
             <Col xs={12} md={6}>
               <ServiceSection1Title>반려동물이</ServiceSection1Title>
               <ServiceSection1SubTitle>더 자유로울 수 있도록</ServiceSection1SubTitle>
@@ -69,10 +71,11 @@ const Service: React.FC<IProps> = (props: IProps) => {
           </ServiceRow>
         </ServiceSection1>
       </ServiceSection1All>
-      
+      <div id='point1'></div>
       <ServicePoint1>
         <ServicePoint1Row>
           <Col xs={12}>
+            
             <ServicePoint1Title>point 01</ServicePoint1Title>
             <ServicePoint1SubTitle>정확하게 이용한 만큼만 지불하세요</ServicePoint1SubTitle>
             <ServicePoint1Txt>결제 후 5분 안에 받아보는 상세 내역!</ServicePoint1Txt>
@@ -84,7 +87,7 @@ const Service: React.FC<IProps> = (props: IProps) => {
           </Col>
         </ServicePoint1Row>
       </ServicePoint1>
-        
+      <div id='point2'></div>
       <ServicePoint2>
         <ServicePoint2Row>
           <ServicePoint2Col>
@@ -98,7 +101,7 @@ const Service: React.FC<IProps> = (props: IProps) => {
           </ServicePoint2Col>
         </ServicePoint2Row>
       </ServicePoint2>
-      
+      <div id='point3'></div>
       <ServicePoint3>
         <ServicePoint3Row>
           <Col>
@@ -120,7 +123,7 @@ const Service: React.FC<IProps> = (props: IProps) => {
           </Col>
         </ServicePoint3Row>
       </ServicePoint3>
-
+      <div id='point4'></div>
       <ServicePoint4>
         <ServicePoint4Row>
           <Col>
