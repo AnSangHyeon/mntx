@@ -115,11 +115,11 @@ const Home: React.FC<IHomeProps> = (props: IHomeProps) => {
           <HomeContents>멍타냥택시는 반려동물과의 이동이 필요할 때</HomeContents>
           <HomeContents>집 앞에서부터 원하는 목적지까지 안전하고 편안한 이동을 선사합니다.</HomeContents>
           <HomeContentsBottomMargin></HomeContentsBottomMargin>
-          <Section2ContentsImg>
+          <Section2ContentsImg> 
             <HashLink smooth to='/Service#point1'>
               <img src={ Section2Contents1 } alt="" />
             </HashLink>
-          </Section2ContentsImg>
+          </Section2ContentsImg> 
           <Section2ContentsImg>
             <HashLink smooth to='/Service#point2'>
               <img src={ Section2Contents2 } alt="" />

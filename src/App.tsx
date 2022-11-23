@@ -20,6 +20,7 @@ import Reservation from '@pages/Reservation'
 import Fare from '@pages/Fare'
 import SignUp from '@pages/Sign'
 import Recruitment from '@pages/Recruitment'
+import EventTest from '@pages/Event Test'
 
 
 
@@ -37,8 +38,8 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
 
   return (
     <div className="App">
-      <Header/>
-      <Routes>
+      <Header/> 
+      <Routes> 
         <Route path='/' element={<Home />} />
         <Route path='/Service' element={<Service />} />
         <Route path='/Guide' element={<Guide />} />
@@ -47,6 +48,7 @@ const App: React.FC<IAppProps> = (props: IAppProps) => {
         <Route path='/Login' element={<Login />} />
         <Route path='/Sign' element={<SignUp />} />
         <Route path='/Recruitment' element={<Recruitment />} />
+        <Route path='/EventTest' element={<EventTest />} />
       </Routes>
       <Footer/>
     </div>

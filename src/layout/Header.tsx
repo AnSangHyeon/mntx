@@ -38,7 +38,20 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
   function MouseOut(e){
     e.target.style.color = location.pathname.indexOf('Reservation') >= 0 ? '' : ''  
   }
-
+  //이벤트연습
+  function TstClick() { alert("클릭") }
+  function TstContextMenu() { alert("우클릭") }
+  function TstDoubleClick() { alert("더블클릭") } //onClick이벤트있으면 작동 x 
+  // function TstDrag() { alert("드래그") }
+  function TstDragEnd() { alert("드래그완료") }
+  function TstDragEnter(e) {
+    e.target.style.background = 'pink' 
+  }
+  function TstDrop() {
+    
+  }
+ 
+  //
   useOnMount(() => {})
   useOnUnmount(() => {})
 
@@ -80,6 +93,22 @@ const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
           <HeaderUnderLineMenu>
             <HeaderLink to="/Recruitment" style={{color: HeaderColor}} onMouseOut={MouseOut} onMouseOver={MouseOver}>
               <MainMenu>인재 모집</MainMenu>
+            </HeaderLink>
+          </HeaderUnderLineMenu>
+          <HeaderUnderLineMenu>
+            <HeaderLink
+              to="/EventTest" 
+              style={{color: HeaderColor}} 
+              onMouseOut={MouseOut} 
+              onMouseOver={MouseOver}
+              onClick={TstClick}
+              onContextMenu={TstContextMenu}
+              onDoubleClick={TstDoubleClick}
+              // onDrag={TstDrag}
+              onDragEnd={TstDragEnd}
+              onDragEnter={TstDragEnter}
+            >
+              <MainMenu>event test</MainMenu>
             </HeaderLink>
           </HeaderUnderLineMenu>
         </HeaderLeft>

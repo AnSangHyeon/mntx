@@ -1,6 +1,6 @@
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import { 
   Accordion, 
   Button, 
@@ -1036,4 +1036,17 @@ export const FooterHeightAll = styled.div`
   width: 100%;
   max-width: 1920px;
   background: #222837;
+`
+export const EventTestAll = styled.div`
+  width: 100%;
+`
+export const AwesomeBlock = styled(FontAwesomeIcon)` 
+  display: block;
+  height: 35px;
+  margin: 0 auto;
+`
+export const EventInput = styled.input` 
+  width: 300px;
+  display: block;
+  margin: 0 auto;
 `

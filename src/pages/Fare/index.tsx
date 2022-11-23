@@ -38,8 +38,7 @@ import {
 import { useOnMount, useOnUnmount } from '@utils/hook'
 import React, { Fragment, useState } from 'react'
 import { Button, Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootstrap'
-import { faChevronLeft, faPlus, faMinus } from "@fortawesome/free-solid-svg-icons"
-import { faCheckSquare, faSpinner } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faPlus, faMinus, faCheckSquare, faSpinner } from "@fortawesome/free-solid-svg-icons"
 import { faSquare } from '@fortawesome/free-regular-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
 import Footer from '@layout/Footer'
@@ -69,7 +68,7 @@ const Fare: React.FC<IProps> = (props: IProps) => {
         <FareContainer1>
           <FareRow1>
             <FareCol1>
-              <FontColorBlack onClick={() => navigate(-1)}>
+              <FontColorBlack onClick={() => navigate(-1)}> {/* 전 주소로 이동 */}
                 <FontAwesomeIcon icon={ faChevronLeft } />&nbsp;
                 돌아가기
               </FontColorBlack>
